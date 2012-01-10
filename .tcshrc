@@ -1,0 +1,28 @@
+alias ls "ls -al"
+alias dir "ls -al"
+alias d "cd ~/Desktop"
+alias u "cd .."
+alias h "cd ~"
+alias q "exit"
+alias x "q"
+
+alias status "svn status --ignore-externals"
+alias keywords "svn propset svn:keywords 'LastChangedDate LastChangedRevision LastChangedBy HeadURL Id' *"
+alias wordcount "~/Documents/wordcount/wordcount.sh"
+alias clang "rm -rf /tmp/scan-build*; xcodebuild clean; /Applications/clang/scan-build --view xcodebuild"
+alias akosma "ssh akosma@akosma.com"
+alias swissalertmap "ssh swissale@swissalertmap.ch"
+alias doxygen "/Applications/Doxygen.app/Contents/Resources/doxygen"
+
+# This trick to use RVM with TCSH comes from
+# http://po-ru.com/diary/using-rvm-with-tcsh/
+# Check out the ~/.rvm.tcsh file for more info!
+alias rvm "~/.rvm.tcsh"
+
+cd ~/Desktop
+set prompt="%S %n@%m: %d %D %w %Y, %P %s\n%B[%~]\n$ %b"
+
+setenv PATH ~/.cabal/bin:/sw/bin:/usr/local/git/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/share/pear/bin:/opt/local/bin:$PATH
+setenv RUBYOPT rubygems
+setenv EDITOR vim
+

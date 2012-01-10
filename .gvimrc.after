@@ -1,0 +1,54 @@
+" Include user's local vim config
+if filereadable(expand("~/.vimrc.after"))
+  source ~/.vimrc.after
+endif
+
+" Color 
+colorscheme vc
+
+" Change the default font
+set guifont=Bitstream\ Vera\ Sans\ Mono:h14
+" set guifont=Anonymous\ Pro:h16
+" set guifont=Consolas:h14
+
+" Easier to open the NERDTree
+map <F2> :NERDTreeToggle<CR>
+
+" http://mybyteofcode.blogspot.com/2011/01/build-xcode-project-from-within-vim.html
+set makeprg=xcodebuild\ 
+
+" Used for Markdown files
+" map <C-S-Down> :Mm<CR>
+nnoremap <C-S-Down> :silent !open -a Marked.app %:p<cr>
+
+" These settings come from
+" http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/
+" set transparency=2
+set guioptions=aAce
+
+" Autosave when the app loses focus
+" This is adapted from
+" http://vim.wikia.com/wiki/Auto_save_files_when_focus_is_lost
+au FocusLost * silent! wa
+set autowriteall
+
+" This is to set print options to landscape
+" http://vimdoc.sourceforge.net/htmldoc/print.html
+set printoptions=paper:A4,syntax:y,portrait:n  
+
+" Presentation colors and config
+" Adapted from
+" http://vim.devth.com/presentation-mode-for-vim
+function! PresentationMode()
+    set nolist
+    " Change the default font
+    set guifont=Bitstream\ Vera\ Sans\ Mono:h18
+endfunction
+nmap <leader>PR :call PresentationMode()<cr>
+
+" Following three lines remove the auto copy function from VIM
+" http://vim.wikia.com/wiki/Auto_copy_the_mouse_selection
+set guioptions-=a
+set guioptions-=A
+set guioptions-=aA
+
