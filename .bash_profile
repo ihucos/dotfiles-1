@@ -26,12 +26,3 @@ TERM=xterm-256color
 
 # export ARCHFLAGS="-arch x86_64"
 
-
-##
-# Your previous /Users/adrian/.bash_profile file was backed up as /Users/adrian/.bash_profile.macports-saved_2011-12-01_at_23:19:28
-##
-
-# MacPorts Installer addition on 2011-12-01_at_23:19:28: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
