@@ -18,9 +18,14 @@ if [ -d "$DIR" ]; then
   rm -rf $DIR
 fi
 
+# Create the required extensions dir
 mkdir $DIR
-cd $DIR
 
+# Manually install asciidoc plugin
+cp -R other/asciidoc $DIR
+
+# Clone repos with other plugins
+cd $DIR
 git clone git://github.com/joestelmach/javaScriptLint.vim.git
 git clone git://github.com/tpope/vim-ragtag.git
 git clone git://github.com/msanders/cocoa.vim.git
