@@ -4,11 +4,13 @@ rm ~/.bash_profile
 rm ~/.gvimrc.after
 rm ~/.tcshrc
 rm ~/.vimrc.after
+rm ~/.inputrc
 
 ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/.dotfiles/.gvimrc.after ~/.gvimrc.after
 ln -s ~/.dotfiles/.tcshrc ~/.tcshrc
 ln -s ~/.dotfiles/.vimrc.after ~/.vimrc.after
+ln -s ~/.dotfiles/.inputrc ~/.inputrc
 
 # Install Vim .janus extensions
 DIR=~/.janus

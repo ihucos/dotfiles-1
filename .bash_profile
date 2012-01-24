@@ -13,7 +13,7 @@ alias akosma="ssh akosma@akosma.com"
 alias swissalertmap="ssh swissale@swissalertmap.ch"
 alias emulator="/Applications/android-sdk-mac_86/tools/emulator -avd Gingerbread &"
 
-export PATH=~/.cabal/bin:/sw/bin:/usr/local/git/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/share/pear/bin:/opt/local/bin:$PATH
+export PATH=~/.cabal/bin:/sw/bin:/usr/local/git/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/share/pear/bin:/opt/local/bin:.:$PATH
 export EDITOR=vim
 export NODE_PATH=/usr/local/lib/node_modules
 
