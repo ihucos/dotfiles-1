@@ -97,7 +97,7 @@ map <leader>jx  <Esc>:PrettyXML<CR>
 " http://vim.wikia.com/wiki/Cleanup_your_HTML
 " It requires installing HTML Tidy using Homebrew:
 " brew install https://raw.github.com/adamv/homebrew-alt/master/duplicates/tidy.rb
-vmap ,x :!tidy -q -i -xml<CR>
+vmap ,x :!tidy -q -i -utf8<CR>
 
 " Associate files to the proper extension as explained in
 " http://beerpla.net/2008/04/02/how-to-add-a-vim-file-extension-to-syntax-highlighting/
