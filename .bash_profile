@@ -3,9 +3,8 @@ alias d="cd ~/Desktop"
 alias u="cd .."
 alias h="cd ~"
 alias q="exit"
-alias x="q"
+alias x="exit"
 
-alias mysql="/Applications/MAMP/Library/bin/mysql --user=root --password=root"
 alias status="svn status --ignore-externals"
 alias keywords="svn propset svn:keywords 'LastChangedDate LastChangedRevision LastChangedBy HeadURL Id' *"
 

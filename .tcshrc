@@ -3,7 +3,7 @@ alias d "cd ~/Desktop"
 alias u "cd .."
 alias h "cd ~"
 alias q "exit"
-alias x "q"
+alias x "exit"
 
 alias status "svn status --ignore-externals"
 alias keywords "svn propset svn:keywords 'LastChangedDate LastChangedRevision LastChangedBy HeadURL Id' *"
@@ -14,6 +14,8 @@ alias keywords "svn propset svn:keywords 'LastChangedDate LastChangedRevision La
 alias rvm "~/.rvm.tcsh"
 
 cd ~/Desktop
+
+# Fancy prompt
 set prompt="%S %n@%m: %d %D %w %Y, %P %s\n%B[%~]\n$ %b"
 
 setenv PATH ~/.cabal/bin:/sw/bin:/usr/local/git/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/share/pear/bin:/opt/local/bin:$PATH
