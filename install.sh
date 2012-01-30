@@ -1,18 +1,15 @@
 #!/usr/bin/env sh
 
-rm ~/.bash_profile
-rm ~/.gvimrc.after
-rm ~/.tcshrc
-rm ~/.vimrc.after
-rm ~/.vimrc.before
-rm ~/.inputrc
+files=(.bash_profile .gvimrc.after .tcshrc .vimrc.after .vimrc.before .inputrc)
 
-ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/.dotfiles/.gvimrc.after ~/.gvimrc.after
-ln -s ~/.dotfiles/.tcshrc       ~/.tcshrc
-ln -s ~/.dotfiles/.vimrc.before ~/.vimrc.before
-ln -s ~/.dotfiles/.vimrc.after  ~/.vimrc.after
-ln -s ~/.dotfiles/.inputrc      ~/.inputrc
+len=${#files[*]}
+i=0
+while [ $i -lt $len ]; do
+    file="${files[$i]}"
+    rm ~/$file
+    ln -s ~/.dotfiles/$file ~/$file
+    let i++
+done
 
 # Install Vim .janus extensions
 DIR=~/.janus
