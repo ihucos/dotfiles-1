@@ -4,11 +4,13 @@ rm ~/.bash_profile
 rm ~/.gvimrc.after
 rm ~/.tcshrc
 rm ~/.vimrc.after
+rm ~/.vimrc.before
 rm ~/.inputrc
 
 ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/.dotfiles/.gvimrc.after ~/.gvimrc.after
 ln -s ~/.dotfiles/.tcshrc       ~/.tcshrc
+ln -s ~/.dotfiles/.vimrc.before ~/.vimrc.before
 ln -s ~/.dotfiles/.vimrc.after  ~/.vimrc.after
 ln -s ~/.dotfiles/.inputrc      ~/.inputrc
 
