@@ -8,6 +8,11 @@ alias x="exit"
 alias status="svn status --ignore-externals"
 alias keywords="svn propset svn:keywords 'LastChangedDate LastChangedRevision LastChangedBy HeadURL Id' *"
 
+# Adapted from
+# http://www.cocoanetics.com/2012/02/my-terminal-is-less-boring-than-yours/
+export CLICOLOR=1
+export LSCOLORS=Gxfxcxdxbxegedabagacad
+
 export PATH=~/.cabal/bin:.:$PATH
 export EDITOR=vim
 export NODE_PATH=/usr/local/lib/node_modules
