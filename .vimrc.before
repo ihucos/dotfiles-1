@@ -1,0 +1,4 @@
+" Change the location and name of the YankRing file
+let g:yankring_history_dir = '$HOME'
+let g:yankring_history_file = '.yankring_history_file'
+
