@@ -13,7 +13,7 @@ alias keywords="svn propset svn:keywords 'LastChangedDate LastChangedRevision La
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
-export PATH=~/.cabal/bin:/usr/local/bin:.:$PATH
+export PATH=~/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:$PATH
 export EDITOR=vim
 export NODE_PATH=/usr/local/lib/node_modules
 
