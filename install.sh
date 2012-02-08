@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-files=(.bash_profile .gvimrc.after .tcshrc .vimrc.after .vimrc.before .inputrc)
+files=(.profile .bash_profile .gvimrc.after .tcshrc .vimrc.after .vimrc.before .inputrc)
 
 len=${#files[*]}
 i=0
