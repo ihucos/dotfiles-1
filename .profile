@@ -1,2 +1,0 @@
-chflags nohidden ~/Library
-

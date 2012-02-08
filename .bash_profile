@@ -5,6 +5,9 @@ alias h="cd ~"
 alias q="exit"
 alias x="exit"
 
+# Avoid having a hidden ~/Library folder in Lion!
+chflags nohidden ~/Library
+
 alias status="svn status --ignore-externals"
 alias keywords="svn propset svn:keywords 'LastChangedDate LastChangedRevision LastChangedBy HeadURL Id' *"
 
