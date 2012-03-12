@@ -1,6 +1,6 @@
 " The color schemes can be seen here
 " http://www.vi-improved.org/color_sampler_pack/
-colorscheme darkspectrum
+colorscheme borland
 " set bg=light
 
 " Easier way to jump from header to implementation
