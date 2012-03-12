@@ -1,5 +1,5 @@
 " Include user's local vim config
-if filereadable(expand("~/.gvimrc.before"))
-  source ~/.gvimrc.before
+if filereadable(expand("~/.vimrc.before"))
+  source ~/.vimrc.before
 endif
 
