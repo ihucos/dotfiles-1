@@ -3,6 +3,10 @@
 colorscheme borland
 " set bg=light
 
+" Show hidden files by default in NERDTree
+" http://media.kbct.de/home/vim/doc/NERD_tree
+let NERDTreeShowHidden=1
+
 " Easier way to jump from header to implementation
 " map <C-M-Up> :A<CR>
 map <D-M-Up> :AT
