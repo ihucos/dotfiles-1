@@ -22,10 +22,13 @@ This installation provides defaults for:
 - [tcsh][5]
 - [bash][4]
 - [vim][3] + [MacVim][1] + [Janus][2]
+- [zsh][6] + [oh-my-zsh][7]
 
 [1]:http://code.google.com/p/macvim/
 [2]:https://github.com/carlhuda/janus
 [3]:http://www.vim.org/
 [4]:http://en.wikipedia.org/wiki/Bash_(Unix_shell)
 [5]:http://www.tcsh.org/Welcome
+[6]:http://www.zsh.org/
+[7]:https://github.com/robbyrussell/oh-my-zsh
 
