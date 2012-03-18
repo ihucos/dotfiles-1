@@ -47,8 +47,8 @@ alias x="exit"
 # Avoid having a hidden ~/Library folder in Lion!
 chflags nohidden ~/Library
 
-PROMPT='%{$bg[cyan]%} %n@%M: %D{%a %d %b %Y}, %* %{$reset_color%}
-%{$fg[cyan]%}[%~]
+PROMPT='%{$bg[yellow]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
+%{$fg[yellow]%}[%~]
 %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
