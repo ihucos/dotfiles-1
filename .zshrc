@@ -60,3 +60,16 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
+function tmuxx {
+    tmux new-session -d -s akosma
+
+    tmux split-window -h
+    tmux resize-pane -R 30
+    tmux split-window
+    tmux resize-pane -D 10
+    tmux clock-mode
+    tmux select-pane -t 0
+
+    tmux -2 -u attach-session -t akosma
+}
+
