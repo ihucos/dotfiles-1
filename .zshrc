@@ -68,6 +68,7 @@ function tmuxx {
     tmux split-window
     tmux resize-pane -D 10
     tmux clock-mode
+    tmux select-pane -t 1
     tmux select-pane -t 0
 
     tmux -2 -u attach-session -t akosma
