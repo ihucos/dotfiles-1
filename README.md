@@ -24,6 +24,9 @@ This installation provides defaults for:
 - [vim][3] + [MacVim][1] + [Janus][2]
 - [zsh][6] + [oh-my-zsh][7]
 
+For maximum compatibility with the [Powerline plugin][8], you might want
+to download a patched version of [Bitstream Vera Sans Mono][9].
+
 [1]:http://code.google.com/p/macvim/
 [2]:https://github.com/carlhuda/janus
 [3]:http://www.vim.org/
@@ -31,4 +34,6 @@ This installation provides defaults for:
 [5]:http://www.tcsh.org/Welcome
 [6]:http://www.zsh.org/
 [7]:https://github.com/robbyrussell/oh-my-zsh
+[8]:https://github.com/Lokaltog/vim-powerline
+[9]:https://gist.github.com/1695735/
 

@@ -11,6 +11,11 @@ let NERDTreeShowHidden=1
 " map <C-M-Up> :A<CR>
 map <D-M-Up> :AT
 
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show unicode glyphs
+set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
+
 " This from
 " http://vim.wikia.com/wiki/Easily_switch_between_source_and_header_file
 " map <D-M-Up> :e %:p:s,.h$,.X123X,:s,.m$,.h,:s,.X123X$,.m,<CR>
