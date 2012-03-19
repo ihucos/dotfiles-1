@@ -42,7 +42,7 @@ set printoptions=paper:A4,syntax:y,portrait:n
 function! PresentationMode()
     set nolist
     " Change the default font
-    set guifont=Bitstream\ Vera\ Sans\ Mono:h18
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h18
 endfunction
 nmap <leader>PR :call PresentationMode()<cr>
 
