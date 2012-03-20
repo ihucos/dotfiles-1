@@ -46,7 +46,7 @@ alias x="exit"
 
 # This comes from
 # http://forums.pragprog.com/forums/242/topics/10474
-alias tmux="tmux -u"
+alias tmux="TERM=screen-256color-bce tmux -u"
 
 # Avoid having a hidden ~/Library folder in Lion!
 chflags nohidden ~/Library
