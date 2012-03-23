@@ -113,6 +113,7 @@ vmap ,x :!tidy -q -i -utf8<CR>
 " If the asciidoc configuration files are not present, copy them from the
 " MacPorts installation folder /opt/local/share/vim/vimfiles
 au BufNewFile,BufRead *.asciidoc set filetype=asciidoc
+au BufNewFile,BufRead *.asc set filetype=asciidoc
 au BufNewFile,BufRead *.dump set filetype=sql
 
 " Change the shape of the cursor when in edit more (this is only for iTerm2)
