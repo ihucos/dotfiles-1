@@ -74,3 +74,8 @@ function tmuxx {
     tmux -2 -u attach-session -t akosma
 }
 
+function gitsvnpush {
+    git svn rebase
+    git svn dcommit
+}
+
