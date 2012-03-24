@@ -14,6 +14,19 @@ Installation
     - `.dotfiles/install.sh`
 - Boum! You have configured a new computer with your preferred defaults.
 
+Vim Plugins
+-----------
+
+The following plugins are installed by the `install.sh` plugin:
+
+- http://github.com/joestelmach/javaScriptLint.vim
+- http://github.com/tpope/vim-ragtag
+- http://github.com/msanders/cocoa.vim
+- http://github.com/Rip-Rip/clang_complete
+- http://github.com/vim-scripts/loremipsum
+- http://github.com/vim-scripts/YankRing.vim
+- http://github.com/Lokaltog/vim-powerline
+
 Requirements
 ------------
 
