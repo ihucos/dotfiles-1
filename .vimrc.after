@@ -1,6 +1,6 @@
 " The color schemes can be seen here
 " http://www.vi-improved.org/color_sampler_pack/
-colorscheme vc
+colorscheme herald
 " set bg=light
 
 " Show hidden files by default in NERDTree
