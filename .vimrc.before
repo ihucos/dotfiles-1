@@ -1,6 +1,7 @@
 " Change the location and name of the YankRing file
 let g:yankring_history_dir = '$HOME'
 let g:yankring_history_file = '.yankring_history_file'
+let g:yankring_manual_clipboard_check = 1
 
 " Color of the JSLint plugin
 let g:jslint_highlight_color = 'Yellow'
