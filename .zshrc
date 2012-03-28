@@ -80,3 +80,12 @@ function gitsvnpush {
     git svn dcommit
 }
 
+function updateall {
+    # Update Homebrew
+    brew update
+    brew upgrade
+
+    # Update npm
+    curl http://npmjs.org/install.sh | sh
+}
+
