@@ -87,5 +87,8 @@ function updateall {
 
     # Update npm
     curl http://npmjs.org/install.sh | sh
+
+    # Update Haskell / cabal
+    cabal update
 }
 
