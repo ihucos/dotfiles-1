@@ -11,6 +11,10 @@ let NERDTreeShowHidden=1
 " map <C-M-Up> :A<CR>
 map <D-M-Up> :AT
 
+" Reverse command of J (join lines) adapted from
+" http://www.terminally-incoherent.com/blog/2012/03/21/why-vim/
+nmap <silent> <leader><CR> i<CR><ESC>
+
 set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
