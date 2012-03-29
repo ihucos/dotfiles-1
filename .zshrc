@@ -90,5 +90,9 @@ function updateall {
 
     # Update Haskell / cabal
     cabal update
+
+    # Update janus
+    cd ~/.vim
+    rake
 }
 
