@@ -99,6 +99,10 @@ function updateall {
     # Update Haskell / cabal
     cabal update
 
+    # Update Rubygems
+    gem update --system
+    gem update
+
     # Update janus
     cd ~/.vim
     rake
