@@ -51,6 +51,13 @@ alias tmux="TERM=screen-256color-bce tmux -u"
 # Avoid having a hidden ~/Library folder in Lion!
 chflags nohidden ~/Library
 
+# Setting some defaults for MacVim 
+defaults write org.vim.MacVim MMTextInsetBottom 20
+defaults write org.vim.MacVim MMTextInsetLeft 20
+defaults write org.vim.MacVim MMTextInsetRight 20
+defaults write org.vim.MacVim MMTextInsetTop 20
+
+# Custom prompt. A real mess, but that's how I like it :)
 PROMPT='%{$bg[red]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
 %{$fg[red]%}[%~]
 %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
@@ -60,6 +67,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
+# Some custom commands go here
 function tmuxx {
     tmux new-session -d -s akosma
 
