@@ -92,22 +92,37 @@ function gitsvnpush {
 }
 
 function updateall {
-    # Update Homebrew
+    echo "============================"
+    echo "Updating Homebrew"
     brew update
     brew upgrade
 
-    # Update npm
+    echo "============================"
+    echo "Updating npm"
     curl http://npmjs.org/install.sh | sh
 
-    # Update Haskell / cabal
+    echo "============================"
+    echo "Updating Haskell / cabal"
     cabal update
 
-    # Update Rubygems
+    echo "============================"
+    echo "Updating Rubygems (requires Ruby 1.9)"
     gem update --system
     gem update
 
-    # Update janus
+    echo "============================"
+    echo "Updating Janus"
     cd ~/.vim
     rake
+    
+    cd ~/.janus
+    for dir in *; do
+        echo "============================"
+        echo "Updating $dir"
+        cd $dir
+        git pull
+        cd ..
+    done
 }
+
 
