@@ -34,5 +34,7 @@ git clone git://github.com/Rip-Rip/clang_complete.git
 git clone git://github.com/vim-scripts/loremipsum.git
 git clone git://github.com/vim-scripts/YankRing.vim.git
 git clone git://github.com/Lokaltog/vim-powerline.git
-git clone git://github.com/kana/vim-smartinput.git
+
+# Disabled for the moment, as it makes command line vim sluggish (?)
+# git clone git://github.com/kana/vim-smartinput.git
 
