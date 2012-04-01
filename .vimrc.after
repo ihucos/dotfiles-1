@@ -106,6 +106,10 @@ endfunction
 command! PrettyXML call DoPrettyXML()
 map <leader>jx  <Esc>:PrettyXML<CR>
 
+" First attempt at a custom command to see all the TODO entries in the quickfix
+" window...
+map <leader>td <Esc>:vimgrep /TODO\:/ **/*.*<CR>:copen<CR>
+
 " This one is to clean HTML files
 " http://vim.wikia.com/wiki/Cleanup_your_HTML
 " It requires installing HTML Tidy using Homebrew:
