@@ -72,7 +72,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
 # Some custom commands go here
 function tmuxx {
-    tmux new-session -d -s akosma
+    tmux new-session -d -s akosma "vim ."
 
     tmux split-window -h
     # tmux resize-pane -R 30
@@ -82,6 +82,8 @@ function tmuxx {
     tmux clock-mode
     tmux select-pane -t 2
     tmux select-pane -t 1
+    tmux new-window
+    tmux select-window -t 1
 
     tmux -2 -u attach-session -t akosma
 }
