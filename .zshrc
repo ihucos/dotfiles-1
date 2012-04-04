@@ -134,4 +134,7 @@ function updateall {
     done
 }
 
+function ascstats {
+    wc -mlw *.asc    
+}
 
