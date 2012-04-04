@@ -26,6 +26,7 @@ The following plugins are installed by the `install.sh` plugin:
 - http://github.com/vim-scripts/loremipsum
 - http://github.com/vim-scripts/YankRing.vim
 - http://github.com/Lokaltog/vim-powerline
+- http://github.com/kana/vim-smartinput
 
 Requirements
 ------------
