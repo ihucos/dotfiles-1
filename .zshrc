@@ -80,14 +80,14 @@ function tmuxx {
         echo "Session not found, creating new one"
         tmux new-session -d -s akosma "vim ."
 
-        tmux split-window -h
+        # tmux split-window -h
         # tmux resize-pane -R 30
         # tmux split-window
         # tmux resize-pane -D 10
-        tmux resize-pane -R 50
-        tmux clock-mode
-        tmux select-pane -t 2
-        tmux select-pane -t 1
+        # tmux resize-pane -R 50
+        # tmux clock-mode
+        # tmux select-pane -t 2
+        # tmux select-pane -t 1
         tmux new-window
         tmux select-window -t 1
     fi
