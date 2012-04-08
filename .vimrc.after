@@ -3,6 +3,10 @@
 colorscheme wombat256
 " set bg=light
 
+" Set the current directory to the one of the current file
+" http://superuser.com/questions/195022/vim-how-to-synchronize-nerdtree-with-current-opened-tab-file-path
+autocmd BufEnter * lcd %:p:h
+
 " Show hidden files by default in NERDTree
 " http://media.kbct.de/home/vim/doc/NERD_tree
 let NERDTreeShowHidden=1
