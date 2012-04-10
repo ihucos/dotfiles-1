@@ -45,7 +45,7 @@ set cursorline
 " When the page starts to scroll, keep the cursor 8 lines from
 " the top and 8 lines from the bottom; taken from:
 " http://www.derekwyatt.org/vim/the-vimrc-file/better-settings/
-set scrolloff=10
+set scrolloff=8
 
 " Allow for faster scrolling
 set lazyredraw

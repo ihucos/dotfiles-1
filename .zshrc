@@ -55,10 +55,10 @@ alias earthquake="/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/ear
 chflags nohidden ~/Library
 
 # Setting some defaults for MacVim 
-defaults write org.vim.MacVim MMTextInsetBottom 20
-defaults write org.vim.MacVim MMTextInsetLeft 20
-defaults write org.vim.MacVim MMTextInsetRight 20
-defaults write org.vim.MacVim MMTextInsetTop 20
+defaults write org.vim.MacVim MMTextInsetBottom 10
+defaults write org.vim.MacVim MMTextInsetLeft 10
+defaults write org.vim.MacVim MMTextInsetRight 10
+defaults write org.vim.MacVim MMTextInsetTop 10
 
 # Custom prompt. A real mess, but that's how I like it :)
 PROMPT='%{$bg[red]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
