@@ -107,6 +107,10 @@ function updateall {
     brew upgrade
 
     echo "============================"
+    echo "brew doctor"
+    brew doctor
+
+    echo "============================"
     echo "Updating npm"
     curl http://npmjs.org/install.sh | sh
 
