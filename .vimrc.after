@@ -74,6 +74,12 @@ set tm=500
 " :nmap j jzz
 " :nmap k kzz
 
+" Trying to make things faster when using Vim, adapted from
+" http://robots.thoughtbot.com/post/2166174647/love-hate-tmux#comment-157732211
+set notimeout
+set ttimeout
+set timeoutlen=50
+
 " This one comes from
 " http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html
 map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
