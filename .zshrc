@@ -116,6 +116,7 @@ function updateall {
     echo "============================"
     echo "Updating npm"
     curl http://npmjs.org/install.sh | sh
+    npm update
 
     echo "============================"
     echo "Updating Haskell / cabal"
