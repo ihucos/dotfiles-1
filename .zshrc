@@ -61,7 +61,7 @@ defaults write org.vim.MacVim MMTextInsetRight 10
 defaults write org.vim.MacVim MMTextInsetTop 10
 
 # Custom prompt. A real mess, but that's how I like it :)
-PROMPT='%{$bg[red]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
+PROMPT='%{$bg[red]%}%{$fg[white]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
 %{$fg[red]%}[%~]
 %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
