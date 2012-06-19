@@ -73,6 +73,10 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 # Required by Mosh
 LC_CTYPE="en_US.UTF-8"
 
+# Customize git log, taken from
+# http://coderwall.com/p/euwpig?i=3&p=1&t=git
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+
 # Some custom commands go here
 function tmuxx {
     tmux ls | grep akosma
