@@ -70,6 +70,9 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
+# Required by Homebrew
+export HOMEBREW_TEMP=/tmp
+
 # Required by Mosh
 LC_CTYPE="en_US.UTF-8"
 
