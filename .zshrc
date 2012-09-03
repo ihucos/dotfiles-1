@@ -71,7 +71,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 export HOMEBREW_TEMP=/tmp
 
 # Required by Sencha Touch
-export SENCHA_SDK_TOOLS_2_0_0_BETA3=/Applications/SenchaSDKTools-2
+export SENCHA_SDK_TOOLS_2_0_0_BETA3=/Applications/SenchaSDKTools-2.0.0-beta3
 
 # Required by Mosh
 LC_CTYPE="en_US.UTF-8"
