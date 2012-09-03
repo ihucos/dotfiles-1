@@ -48,9 +48,6 @@ alias x="exit"
 # http://forums.pragprog.com/forums/242/topics/10474
 alias tmux="TERM=screen-256color-bce tmux -u"
 
-# Command line Twitter client
-alias earthquake="/usr/local/Cellar/ruby/1.9.3-p125/lib/ruby/gems/1.9.1/gems/earthquake-0.8.5/bin/earthquake"
-
 # Avoid having a hidden ~/Library folder in Lion!
 chflags nohidden ~/Library
 
@@ -72,6 +69,9 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
 # Required by Homebrew
 export HOMEBREW_TEMP=/tmp
+
+# Required by Sencha Touch
+export SENCHA_SDK_TOOLS_2_0_0_BETA3=/Applications/SenchaSDKTools-2
 
 # Required by Mosh
 LC_CTYPE="en_US.UTF-8"
