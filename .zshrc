@@ -138,6 +138,11 @@ function updateall {
     echo "Updating Janus"
     cd ~/.vim
     rake
+
+    echo "============================"
+    echo "Updating .dotfiles"
+    cd ~/.dotfiles
+    git pull
     
     cd ~/.janus
     for dir in *; do
