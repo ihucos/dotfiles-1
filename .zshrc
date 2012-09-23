@@ -117,6 +117,10 @@ function updateall {
     brew upgrade
 
     echo "============================"
+    echo "brew linkapps"
+    brew linkapps
+
+    echo "============================"
     echo "brew doctor"
     brew doctor
 
