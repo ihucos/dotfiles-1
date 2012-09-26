@@ -162,3 +162,7 @@ function ascstats {
     wc -mlw *.asc    
 }
 
+# This is inspired from
+# https://github.com/joho/terminal-stuff/blob/master/bashrc
+fortune
+
