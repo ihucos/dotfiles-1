@@ -74,7 +74,7 @@ export HOMEBREW_TEMP=/tmp
 export SENCHA_SDK_TOOLS_2_0_0_BETA3=/Applications/SenchaSDKTools-2.0.0-beta3
 
 # Using vimpager requires these settings
-export PAGER=~/bin/vimpager
+export PAGER=/usr/local/bin/vimpager
 alias less=$PAGER
 alias zless=$PAGER
 
