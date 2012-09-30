@@ -117,7 +117,13 @@ function updateall {
     brew upgrade
 
     echo "============================"
+    echo "brew cleanup"
+    brew cleanup
+
+    echo "============================"
     echo "brew linkapps"
+    rm -r ~/Applications
+    mkdir ~/Applications
     brew linkapps
 
     echo "============================"
