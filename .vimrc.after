@@ -1,6 +1,6 @@
 " The color schemes can be seen here
 " http://www.vi-improved.org/color_sampler_pack/
-colorscheme adaryn
+colorscheme solarized
 " set bg=dark
 
 " Set the current directory to the one of the current file
