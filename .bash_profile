@@ -27,3 +27,7 @@ export LANG=en_US.UTF-8
 
 TERM=xterm-256color
 
+
+export PATH=/Users/adrian/bin/Sencha/Cmd/3.0.0.250:$PATH
+
+export SENCHA_CMD_3_0_0="/Users/adrian/bin/Sencha/Cmd/3.0.0.250"
