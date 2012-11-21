@@ -34,7 +34,7 @@ plugins=(git node brew github osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Applications/SenchaSDKTools-2.0.0-beta3:/Users/adrian/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/texbin:/usr/local/Cellar/ruby/1.9.3-p194/bin
+export PATH=/Applications/SenchaSDKTools-2.0.0-beta3:/Users/adrian/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/texbin:/usr/local/Cellar/ruby/1.9.3-p327/bin
 
 # Some aliases
 alias ls="ls -alG"
