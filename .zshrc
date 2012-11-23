@@ -34,7 +34,7 @@ plugins=(git node brew github osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Applications/SenchaSDKTools-2.0.0-beta3:/Users/adrian/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/texbin:/usr/local/Cellar/ruby/1.9.3-p327/bin
+export PATH=/Users/adrian/bin/Sencha/Cmd/3.0.0.250:/Users/adrian/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/texbin:/usr/local/Cellar/ruby/1.9.3-p327/bin
 
 # Some aliases
 alias ls="ls -alG"
@@ -69,9 +69,6 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
 # Required by Homebrew
 export HOMEBREW_TEMP=/tmp
-
-# Required by Sencha Touch
-export SENCHA_SDK_TOOLS_2_0_0_BETA3=/Applications/SenchaSDKTools-2.0.0-beta3
 
 # Required by Mosh
 LC_CTYPE="en_US.UTF-8"
