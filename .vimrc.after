@@ -133,6 +133,7 @@ vmap ,x :!tidy -q -i -utf8<CR>
 au BufNewFile,BufRead *.asciidoc set filetype=asciidoc
 au BufNewFile,BufRead *.asc set filetype=asciidoc
 au BufNewFile,BufRead *.dump set filetype=sql
+au BufNewFile,BufRead *.md set filetype=markdown
 
 " Change the shape of the cursor when in edit more (this is only for iTerm2)
 " Adapted from
