@@ -74,6 +74,9 @@ set tm=500
 " :nmap j jzz
 " :nmap k kzz
 
+" Center the buffer on the screen when you go to the bottom of it
+:nmap <S-G> <S-G>zz
+
 " Trying to make things faster when using Vim, adapted from
 " http://robots.thoughtbot.com/post/2166174647/love-hate-tmux#comment-157732211
 set notimeout
