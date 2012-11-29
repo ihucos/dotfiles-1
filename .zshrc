@@ -96,7 +96,7 @@ function tmuxx {
         # tmux select-pane -t 1
         tmux new-window
         tmux split-window -h
-        tmux new-window "vifm"
+        tmux new-window "vim ~/.dotfiles"
         tmux select-window -t 1
     fi
 
