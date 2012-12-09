@@ -1,7 +1,6 @@
 " The color schemes can be seen here
 " http://www.vi-improved.org/color_sampler_pack/
 colorscheme desert
-set bg=light
 
 " Set the current directory to the one of the current file
 " http://superuser.com/questions/195022/vim-how-to-synchronize-nerdtree-with-current-opened-tab-file-path
