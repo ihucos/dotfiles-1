@@ -37,4 +37,6 @@ git clone git://github.com/Lokaltog/vim-powerline.git
 git clone git://github.com/kana/vim-smartinput.git
 git clone git://github.com/groenewege/vim-less.git
 git clone git://github.com/tpope/vim-haml.git
+git clone git://github.com/tomtom/tcomment_vim
+git clone git://github.com/altercation/vim-colors-solarized
 
