@@ -4,8 +4,8 @@ if filereadable(expand("~/.vimrc.after"))
 endif
 
 " Color 
-colorscheme solarized
-set bg=dark
+"colorscheme solarized
+"set bg=dark
 
 " Change the default font
 set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
