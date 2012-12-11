@@ -151,7 +151,6 @@ function updateall {
     echo "Updating Rubygems (requires Ruby 1.9)"
     gem update --system
     gem update
-    gem cleanup
 
     echo "============================"
     echo "Updating Janus"
