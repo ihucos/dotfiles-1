@@ -110,6 +110,15 @@ function gitsvnpush {
 
 function updateall {
     echo "============================"
+    echo "Updating oh my zsh"
+    upgrade_oh_my_zsh
+    
+    echo "============================"
+    echo "Updating .dotfiles"
+    cd ~/.dotfiles
+    git pull
+    
+    echo "============================"
     echo "Updating Homebrew"
     brew update
     brew upgrade
@@ -147,11 +156,6 @@ function updateall {
     cd ~/.vim
     rake
 
-    echo "============================"
-    echo "Updating .dotfiles"
-    cd ~/.dotfiles
-    git pull
-    
     cd ~/.janus
     for dir in *; do
         echo "============================"
