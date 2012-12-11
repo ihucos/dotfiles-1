@@ -112,6 +112,7 @@ function updateall {
     echo "============================"
     echo "Updating oh my zsh"
     upgrade_oh_my_zsh
+    zsh_stats
     
     echo "============================"
     echo "Updating .dotfiles"
