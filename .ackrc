@@ -5,10 +5,8 @@
 --follow
 
 # Ignore some folders
---ignore-dir=.git
 --ignore-dir=tmp
 --ignore-dir=build
---ignore-dir=.svn
 
 # Add Markdown, Textile, and reStructuredText
 --type-set=plaintext=.md,.mdown,.markdown,.mkdn,.textile,.rst,.txt,.asciidoc,.asc
