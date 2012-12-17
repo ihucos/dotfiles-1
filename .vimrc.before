@@ -9,3 +9,6 @@ let g:jslint_highlight_color = 'Yellow'
 " Enable powerful Powerline stuff
 let g:Powerline_symbols = 'fancy'
 
+" Solarized colors
+let g:solarized_termcolors=256
+
