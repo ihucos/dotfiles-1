@@ -85,18 +85,10 @@ function tmuxx {
         echo "Session found, attaching"
     else
         echo "Session not found, creating new one"
-        tmux new-session -d -s akosma "vim ."
-
-        # tmux resize-pane -R 30
-        # tmux split-window
-        # tmux resize-pane -D 10
-        # tmux resize-pane -R 50
-        # tmux clock-mode
-        # tmux select-pane -t 2
-        # tmux select-pane -t 1
-        tmux new-window
+        tmux new-session -d -n "book" -s akosma "vim ."
+        tmux new-window -n "commands"
         tmux split-window -h
-        tmux new-window "vim ~/.dotfiles"
+        tmux new-window -n "dotfiles" "vim ~/.dotfiles"
         tmux select-window -t 1
     fi
 
