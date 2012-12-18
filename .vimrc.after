@@ -158,7 +158,7 @@ endif
 
 " The color schemes can be seen here
 " http://www.vi-improved.org/color_sampler_pack/
-set t_Co=64 " Explicitly tell vim that the terminal supports 256 colors
-set background=light
+" set t_Co=64 " Explicitly tell vim that the terminal supports 256 colors
+" set background=light
 colorscheme solarized
 
