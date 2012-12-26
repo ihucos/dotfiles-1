@@ -39,4 +39,5 @@ git clone git://github.com/groenewege/vim-less.git
 git clone git://github.com/tpope/vim-haml.git
 git clone git://github.com/tomtom/tcomment_vim
 git clone git://github.com/altercation/vim-colors-solarized
+git clone git://github.com/vim-scripts/ShowMarks.git
 
