@@ -12,3 +12,8 @@ let g:Powerline_symbols = 'fancy'
 " Solarized colors
 let g:solarized_termcolors=256
 
+" Configure the ShowMarks plugin
+let g:showmarks_include="abcdefghijklmnopqrstuvwxyz"
+let g:showmarks_ignore_type="hpmpr"
+let g:showmarks_hlline_lower=1
+
