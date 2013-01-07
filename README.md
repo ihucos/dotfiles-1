@@ -9,7 +9,7 @@ Installation
 
 - Clone the repo from Github into a hidden folder named .dotfiles:
     - `cd ~`
-    - `git clone git://github.com/akosmasoftware/dotfiles.git .dotfiles`
+    - `- http://github.com/akosmasoftware/dotfiles.git .dotfiles`
 - Run the install.sh folder to create symlinks:
     - `.dotfiles/install.sh`
 - Boum! You have configured a new computer with your preferred defaults.
@@ -19,14 +19,20 @@ Vim Plugins
 
 The following plugins are installed by the `install.sh` plugin:
 
-- http://github.com/joestelmach/javaScriptLint.vim
-- http://github.com/tpope/vim-ragtag
-- http://github.com/msanders/cocoa.vim
-- http://github.com/Rip-Rip/clang_complete
-- http://github.com/vim-scripts/loremipsum
-- http://github.com/vim-scripts/YankRing.vim
-- http://github.com/Lokaltog/vim-powerline
-- http://github.com/kana/vim-smartinput
+- http://github.com/joestelmach/javaScriptLint.vim.git
+- http://github.com/tpope/vim-ragtag.git
+- http://github.com/msanders/cocoa.vim.git
+- http://github.com/Rip-Rip/clang_complete.git
+- http://github.com/vim-scripts/loremipsum.git
+- http://github.com/vim-scripts/YankRing.vim.git
+- http://github.com/Lokaltog/vim-powerline.git
+- http://github.com/kana/vim-smartinput.git
+- http://github.com/groenewege/vim-less.git
+- http://github.com/tpope/vim-haml.git
+- http://github.com/tomtom/tcomment_vim
+- http://github.com/altercation/vim-colors-solarized
+- http://github.com/vim-scripts/ShowMarks.git
+- http://github.com/cakebaker/scss-syntax.vim.git
 
 Requirements
 ------------
