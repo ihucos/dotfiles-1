@@ -80,6 +80,9 @@ LC_CTYPE="en_US.UTF-8"
 # http://coderwall.com/p/euwpig?i=3&p=1&t=git
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
+# Avoid beeps
+setopt NO_BEEP
+
 # Some custom commands go here
 function tmuxx {
     tmux ls | grep akosma
