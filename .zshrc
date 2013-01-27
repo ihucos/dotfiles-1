@@ -36,6 +36,9 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/Users/adrian/bin/Sencha/Cmd/3.0.0.250:/Users/adrian/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/texbin:/usr/local/Cellar/ruby/1.9.3-p362/bin:/opt/local/bin
 
+# To be able to use `symbolicatecrash` we need this variable:
+export DEVELOPER_DIR=`xcode-select --print-path`
+
 # Some aliases
 alias ls="ls -alG"
 alias d="cd ~/Desktop"
