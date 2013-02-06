@@ -30,4 +30,6 @@ TERM=xterm-256color
 
 export PATH=/Users/adrian/bin/Sencha/Cmd/3.0.0.250:$PATH
 
-export SENCHA_CMD_3_0_0="/Users/adrian/bin/Sencha/Cmd/3.0.0.250"
+export SENCHA_CMD_3_0_0="/Users/adrian/bin/Sencha/Cmd/3.0.2.288"
+
+export PATH=/Users/adrian/bin/Sencha/Cmd/3.0.2.288:$PATH

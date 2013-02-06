@@ -25,4 +25,6 @@ setenv EDITOR vim
 
 set path=( "/Users/adrian/bin/Sencha/Cmd/3.0.0.250" $path )
 
-setenv SENCHA_CMD_3_0_0 "/Users/adrian/bin/Sencha/Cmd/3.0.0.250"
+setenv SENCHA_CMD_3_0_0 "/Users/adrian/bin/Sencha/Cmd/3.0.2.288"
+
+set path=( "/Users/adrian/bin/Sencha/Cmd/3.0.2.288" $path )
