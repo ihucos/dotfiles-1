@@ -140,11 +140,6 @@ function updateall {
     brew doctor
 
     echo "============================"
-    echo "Updating npm"
-    curl https://npmjs.org/install.sh | sh
-    npm update
-
-    echo "============================"
     echo "Updating Haskell / cabal"
     cabal update
 
