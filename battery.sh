@@ -3,23 +3,24 @@
 HEART_FULL=♥
 HEART_EMPTY=♡
 [ -z "$NUM_HEARTS" ] &&
-    NUM_HEARTS=5
+    NUM_HEARTS=10
 
 cutinate()
 {
     perc=$1
     inc=$(( 100 / $NUM_HEARTS))
+    value=$inc
 
 
     for i in `seq $NUM_HEARTS`; do
-        if [ $perc -lt 100 ]; then
-            printf "%s " $HEART_EMPTY
-        else
+        if [ $value -lt $perc ]; then
             printf "%s " $HEART_FULL
+        else
+            printf "%s " $HEART_EMPTY
         fi
-        perc=$(( $perc + $inc ))
+        value=$(( $value + $inc ))
     done
-    echo
+echo
 }
 
 linux_get_bat ()
