@@ -54,6 +54,10 @@ alias h="cd ~"
 alias q="exit"
 alias x="exit"
 
+# Some settings to get the battery level from the command line
+export CUTE_BATTERY_INDICATOR=Yes
+alias battery="~/.dotfiles/battery.sh Charging; ~/.dotfiles/battery.sh Discharging"
+
 # This comes from
 # http://forums.pragprog.com/forums/242/topics/10474
 # alias tmux="TERM=screen-256color-bce tmux -u"
