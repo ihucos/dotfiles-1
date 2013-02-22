@@ -100,9 +100,9 @@ case $(uname -s) in
                     fi
                 ;;
                 "FullyCharged")
-                    if [ "$value" = "Yes" ]; then
-                        exit
-                    fi
+                    #if [ "$value" = "Yes" ]; then
+                        #exit
+                    #fi
                 ;;
             esac
             if [[ -n "$maxcap" && -n $curcap ]]; then
