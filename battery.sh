@@ -13,7 +13,7 @@ cutinate()
 
 
     for i in `seq $NUM_HEARTS`; do
-        if [ $value -lt $perc ]; then
+        if [ $value -le $perc ]; then
             printf "%s " $HEART_FULL
         else
             printf "%s " $HEART_EMPTY
@@ -100,9 +100,11 @@ case $(uname -s) in
                     fi
                 ;;
                 "FullyCharged")
-                    #if [ "$value" = "Yes" ]; then
-                        #exit
-                    #fi
+                    if [ "$value" = "Yes" ]; then
+                        # The battery is fully charged!
+                        echo "100"
+                        break;
+                    fi
                 ;;
             esac
             if [[ -n "$maxcap" && -n $curcap ]]; then
