@@ -177,7 +177,7 @@ function updateall {
 }
 
 function ascstats {
-    wc -mlw *.asc    
+    wc -w *.asc    
 }
 
 # This is inspired from
