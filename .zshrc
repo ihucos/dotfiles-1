@@ -124,6 +124,10 @@ function gitsvnpush {
 
 function updateall {
     echo "============================"
+    echo "Move MacPorts out of the way temporarily"
+    sudo mv /opt/local ~/.tempmacports
+
+    echo "============================"
     echo "Updating oh my zsh"
     upgrade_oh_my_zsh
     zsh_stats
@@ -174,6 +178,10 @@ function updateall {
         git pull
         cd ..
     done
+
+    echo "============================"
+    echo "Restore MacPorts"
+    sudo mv ~/.tempmacports /opt/local
 }
 
 function ascstats {
