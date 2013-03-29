@@ -170,5 +170,5 @@ nmap <Leader>/ :TlistToggle<CR>
 nmap <Leader>rt :!ctags -R *<CR>
 
 " For PML files, use 'soft tabs' (i.e. spaces) fo 2 column width
-autocmd FileType pml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType pml setlocal ts=2 sts=2 sw=2 expandtab foldlevelstart=0
 
