@@ -42,4 +42,5 @@ git clone git://github.com/altercation/vim-colors-solarized
 git clone git://github.com/vim-scripts/ShowMarks.git
 git clone git://github.com/cakebaker/scss-syntax.vim.git
 git clone git://github.com/nelstrom/vim-pml.git
+git clone git://github.com/vim-scripts/taglist.vim.git
 
