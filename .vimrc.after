@@ -172,6 +172,3 @@ nmap <Leader>rt :!ctags -R *<CR>
 " For PML files, use 'soft tabs' (i.e. spaces) fo 2 column width
 autocmd FileType pml setlocal ts=2 sts=2 sw=2 expandtab
 
-" This requires ctags installed via Homebrew
-let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
-
