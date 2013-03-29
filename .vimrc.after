@@ -162,3 +162,13 @@ set t_Co=64 " Explicitly tell vim that the terminal supports 64 colors
 " set background=light
 colorscheme oceanblack
 
+" Shortcut to display the list of tags
+let mapleader = "," 
+nmap <Leader>/ :TlistToggle<CR>
+
+" Shortcut to regenerate the tag file
+nmap <Leader>rt :!ctags -R *<CR>
+
+" For PML files, use 'soft tabs' (i.e. spaces) fo 2 column width
+autocmd FileType pml setlocal ts=2 sts=2 sw=2 expandtab
+
