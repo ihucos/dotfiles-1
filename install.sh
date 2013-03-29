@@ -43,4 +43,5 @@ git clone git://github.com/vim-scripts/ShowMarks.git
 git clone git://github.com/cakebaker/scss-syntax.vim.git
 git clone git://github.com/nelstrom/vim-pml.git
 git clone git://github.com/vim-scripts/taglist.vim.git
+git clone git://github.com/andrep/git-svn-clone-externals.git
 

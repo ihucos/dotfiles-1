@@ -54,6 +54,8 @@ alias h="cd ~"
 alias q="exit"
 alias x="exit"
 
+alias git-svn-clone-externals=~/.janus/git-svn-clone-externals/git-svn-clone-externals
+
 # Some settings to get the battery level from the command line
 export CUTE_BATTERY_INDICATOR=Yes
 alias battery="~/.dotfiles/battery.sh Charging; ~/.dotfiles/battery.sh Discharging"
