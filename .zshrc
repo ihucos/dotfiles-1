@@ -42,6 +42,7 @@ export PATH=$(cd $(which gem)/..; pwd):$PATH
 
 # Required for the Pragmatic Programmer toolkit
 export JAVA_HOME=/Library/Java/Home
+alias kindlegen=/Applications/KindleGen_Mac_i386_v2_7/kindlegen
 
 # To be able to use `symbolicatecrash` we need this variable:
 export DEVELOPER_DIR=`xcode-select --print-path`
