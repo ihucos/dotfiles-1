@@ -40,6 +40,9 @@ export PATH=/Users/adrian/bin/Sencha/Cmd/3.0.2.288:/Users/adrian/.cabal/bin:/usr
 # http://stackoverflow.com/a/14138490/133764
 export PATH=$(cd $(which gem)/..; pwd):$PATH
 
+# Required for the Pragmatic Programmer toolkit
+export JAVA_HOME=/Library/Java/Home
+
 # To be able to use `symbolicatecrash` we need this variable:
 export DEVELOPER_DIR=`xcode-select --print-path`
 
