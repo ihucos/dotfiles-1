@@ -34,7 +34,7 @@ plugins=(git node brew github osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/adrian/bin/Sencha/Cmd/3.0.2.288:/Users/adrian/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/texbin:/opt/local/bin
+export PATH=~/bin/Sencha/Cmd/3.0.2.288:~/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/texbin:/opt/local/bin
 
 # Trick coming from
 # http://stackoverflow.com/a/14138490/133764
