@@ -60,6 +60,8 @@ alias x="exit"
 
 alias git-svn-clone-externals=~/.janus/git-svn-clone-externals/git-svn-clone-externals
 
+alias jenkins="java -jar /usr/local/opt/jenkins/libexec/jenkins.war"
+
 # Some settings to get the battery level from the command line
 export CUTE_BATTERY_INDICATOR=Yes
 alias battery="~/.dotfiles/battery.sh Charging; ~/.dotfiles/battery.sh Discharging"
