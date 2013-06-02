@@ -190,6 +190,11 @@ function updateall {
     echo "============================"
     echo "Restore MacPorts"
     sudo mv ~/.tempmacports /opt/local
+
+    echo "============================"
+    echo "Update MacPorts"
+    sudo port selfupdate
+    sudo port upgrade outdated
 }
 
 function ascstats {
