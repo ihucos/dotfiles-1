@@ -161,7 +161,7 @@ endif
 set t_Co=64 " Explicitly tell vim that the terminal supports 64 colors
 " set background=light
 "colorscheme liquidcarbon
-colorscheme navajo
+colorscheme railscasts
 
 " Shortcut to display the list of tags
 let mapleader = "," 
