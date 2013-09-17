@@ -51,7 +51,6 @@ export DEVELOPER_DIR=`xcode-select --print-path`
 export ANDROID_HOME=/Applications/Android/sdk
 
 # Some aliases
-alias ls="ls -alG"
 alias d="cd ~/Desktop"
 alias u="cd .."
 alias h="cd ~"
