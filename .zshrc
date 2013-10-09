@@ -20,6 +20,9 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
 
+# Please.
+DISABLE_CORRECTION="true"
+
 # Uncomment following line if you want to disable autosetting terminal title.
 DISABLE_AUTO_TITLE="true"
 
@@ -158,6 +161,10 @@ function updateall {
     echo "============================"
     echo "brew doctor"
     brew doctor
+
+    echo "============================"
+    echo "Updating NPM"
+    npm update -g
 
     echo "============================"
     echo "Updating Haskell / cabal"
