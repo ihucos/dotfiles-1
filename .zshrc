@@ -42,9 +42,6 @@ export PATH=~/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbi
 export SENCHA_CMD_3_0_0="/Users/adrian/bin/Sencha/Cmd/4.0.0.203"
 export PATH=/Users/adrian/bin/Sencha/Cmd/4.0.0.203:$PATH
 
-# Initializing rbenv
-eval "$(rbenv init -)"
-
 # Trick coming from
 # http://stackoverflow.com/a/14138490/133764
 export PATH=$(brew --prefix ruby)/bin:$PATH
