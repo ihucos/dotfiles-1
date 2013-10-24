@@ -75,9 +75,6 @@ alias battery="~/.dotfiles/battery.sh Charging; ~/.dotfiles/battery.sh Dischargi
 # http://forums.pragprog.com/forums/242/topics/10474
 # alias tmux="TERM=screen-256color-bce tmux -u"
 
-# Avoid having a hidden ~/Library folder in Lion!
-chflags nohidden ~/Library
-
 # Setting some defaults for MacVim 
 defaults write org.vim.MacVim MMTextInsetBottom 10
 defaults write org.vim.MacVim MMTextInsetLeft 10
