@@ -4,7 +4,7 @@ if filereadable(expand("~/.vimrc.after"))
 endif
 
 " Color 
-colorscheme vc
+colorscheme Tomorrow
 "set bg=dark
 
 " Change the default font
@@ -44,7 +44,7 @@ set printoptions=paper:A4,syntax:y,portrait:n
 function! PresentationMode()
     set nolist
     " Change the default font
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h18
+    set guifont=Inconsolata:h20
 endfunction
 nmap <leader>PR :call PresentationMode()<cr>
 
