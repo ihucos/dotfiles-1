@@ -8,9 +8,10 @@ colorscheme vc
 "set bg=dark
 
 " Change the default font
-set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
+" set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
 " set guifont=Anonymous\ Pro:h16
 " set guifont=Consolas:h14
+set guifont=Inconsolata:h14
 
 " Easier to open the NERDTree
 map <F2> :NERDTreeToggle<CR>
