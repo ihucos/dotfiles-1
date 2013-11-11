@@ -194,7 +194,3 @@ function ascstats {
     wc -w *.asc    
 }
 
-# This is inspired from
-# https://github.com/joho/terminal-stuff/blob/master/bashrc
-fortune
-
