@@ -162,18 +162,18 @@ function updateall {
     echo "brew doctor"
     brew doctor
 
-    echo "============================"
-    echo "Updating NPM"
-    npm update -g
+    #echo "============================"
+    #echo "Updating NPM"
+    #npm update -g
 
     echo "============================"
     echo "Updating Haskell / cabal"
     cabal update
 
-    echo "============================"
-    echo "Updating Rubygems (requires Ruby 1.9)"
-    gem update --system
-    gem update
+    #echo "============================"
+    #echo "Updating Rubygems (requires Ruby 1.9)"
+    #gem update --system
+    #gem update
 
     echo "============================"
     echo "Updating Janus"
