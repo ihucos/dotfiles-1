@@ -40,7 +40,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=~/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/texbin:/opt/local/bin
 
 # Postgres
-export PATH=/Applications/Postgres93.app/Contents/MacOS/bin/:$PATH
+export PATH=/Applications/Postgres93.app/Contents/MacOS/bin:$PATH
 
 #export SENCHA_CMD_3_0_0="/Users/adrian/bin/Sencha/Cmd/4.0.0.203"
 #export PATH=/Users/adrian/bin/Sencha/Cmd/4.0.0.203:$PATH
