@@ -112,6 +112,9 @@ setopt NO_BEEP
 # http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
+# To launch the MongoDB daemon
+alias mdb="mongod --config /usr/local/etc/mongod.conf"
+
 # Some custom commands go here
 function tmuxx {
     tmux ls | grep akosma
