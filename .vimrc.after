@@ -81,6 +81,10 @@ set timeoutlen=50
 " http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html
 map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+" http://stackoverflow.com/a/7078429/133764
+cmap w!! w !sudo tee > /dev/null %
+
 " This comes from
 " http://vim.wikia.com/wiki/Pretty-formatting_XML
 function! DoPrettyXML()
