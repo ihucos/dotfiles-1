@@ -15,7 +15,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="pmcgee"
 
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
@@ -39,11 +39,16 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(tmux git brew github osx encode64 jsontools osx urltools)
 
 # By default this is false, this launches tmux automatically
-ZSH_TMUX_AUTOSTART_ONCE=false
 ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART_ONCE=false
 ZSH_TMUX_AUTOCONNECT=true
 
 source $ZSH/oh-my-zsh.sh
+
+# Custom prompt. A real mess, but that's how I like it :)
+#PROMPT='%{$bg[red]%}%{$fg[white]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
+#%{$fg[red]%}[%~]
+#%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 # To be able to use `symbolicatecrash` we need this variable:
 export DEVELOPER_DIR=`xcode-select --print-path`
@@ -71,16 +76,6 @@ defaults write org.vim.MacVim MMTextInsetBottom 10
 defaults write org.vim.MacVim MMTextInsetLeft 10
 defaults write org.vim.MacVim MMTextInsetRight 10
 defaults write org.vim.MacVim MMTextInsetTop 10
-
-# Custom prompt. A real mess, but that's how I like it :)
-PROMPT='%{$bg[red]%}%{$fg[white]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
-%{$fg[red]%}[%~]
-%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
-
-ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
 # Required by Homebrew
 export HOMEBREW_TEMP=/tmp
