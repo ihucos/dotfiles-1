@@ -1,3 +1,13 @@
+# Customize to your needs...
+export PATH=~/.cabal/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/texbin:/opt/local/bin
+
+# Postgres
+export PATH=/Applications/Postgres93.app/Contents/MacOS/bin:$PATH
+
+# Trick coming from
+# http://stackoverflow.com/a/14138490/133764
+export PATH=$(brew --prefix ruby)/bin:$PATH
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -11,14 +21,8 @@ ZSH_THEME="robbyrussell"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
 # Comment this out to disable weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
 
 # Please.
 DISABLE_CORRECTION="true"
@@ -32,26 +36,14 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git node brew github osx)
+plugins=(tmux git brew github osx encode64 jsontools osx urltools)
+
+# By default this is false, this launches tmux automatically
+ZSH_TMUX_AUTOSTART_ONCE=false
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOCONNECT=true
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-export PATH=~/.cabal/bin:/usr/local/sbin:/usr/local/bin:.:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/texbin:/opt/local/bin
-
-# Postgres
-export PATH=/Applications/Postgres93.app/Contents/MacOS/bin:$PATH
-
-#export SENCHA_CMD_3_0_0="/Users/adrian/bin/Sencha/Cmd/4.0.0.203"
-#export PATH=/Users/adrian/bin/Sencha/Cmd/4.0.0.203:$PATH
-
-# Trick coming from
-# http://stackoverflow.com/a/14138490/133764
-export PATH=$(brew --prefix ruby)/bin:$PATH
-
-# Required for the Pragmatic Programmer toolkit
-export JAVA_HOME=/Library/Java/Home
-alias kindlegen=/Applications/KindleGen_Mac_i386_v2_7/kindlegen
 
 # To be able to use `symbolicatecrash` we need this variable:
 export DEVELOPER_DIR=`xcode-select --print-path`
@@ -74,11 +66,7 @@ alias jenkins="java -jar /usr/local/opt/jenkins/libexec/jenkins.war"
 export CUTE_BATTERY_INDICATOR=Yes
 alias battery="~/.dotfiles/battery.sh Charging; ~/.dotfiles/battery.sh Discharging"
 
-# This comes from
-# http://forums.pragprog.com/forums/242/topics/10474
-# alias tmux="TERM=screen-256color-bce tmux -u"
-
-# Setting some defaults for MacVim 
+# Setting some defaults for MacVim
 defaults write org.vim.MacVim MMTextInsetBottom 10
 defaults write org.vim.MacVim MMTextInsetLeft 10
 defaults write org.vim.MacVim MMTextInsetRight 10
@@ -140,12 +128,12 @@ function updateall {
     echo "Updating oh my zsh"
     upgrade_oh_my_zsh
     zsh_stats
-    
+
     echo "============================"
     echo "Updating .dotfiles"
     cd ~/.dotfiles
     git pull
-    
+
     echo "============================"
     echo "Updating Homebrew"
     brew update
@@ -194,7 +182,6 @@ function updateall {
 }
 
 function ascstats {
-    wc -w *.asc    
+    wc -w *.asc
 }
-
 
