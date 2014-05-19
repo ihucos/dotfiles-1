@@ -197,3 +197,4 @@ function ascstats {
     wc -w *.asc    
 }
 
+
