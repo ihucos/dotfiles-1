@@ -1,98 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>.dotfiles by akosmasoftware</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <title>.dotfiles by akosma</title>
   </head>
+
   <body>
+    <div id="container">
+      <div class="inner">
 
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/akosmasoftware/dotfiles">Fork On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/akosmasoftware/dotfiles/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/akosmasoftware/dotfiles/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
+        <header>
           <h1>.dotfiles</h1>
-          <p>Configuration files for several command-line tools</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/akosmasoftware">akosmasoftware</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-        </div>
+          <h2>Configuration files for several command-line tools</h2>
+        </header>
 
-        <h1>Dotfiles</h1>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/akosma/dotfiles/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/akosma/dotfiles/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/akosma/dotfiles" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-<p>This folder, stored as a git repo, contains all the configuration files
-I regularly use for command-line apps.</p>
+        <hr>
 
-<h2>Installation</h2>
+        <section id="main_content">
+          <h1>
+<a name="dotfiles" class="anchor" href="#dotfiles"><span class="octicon octicon-link"></span></a>Dotfiles</h1>
+
+<p>This project contains configuration files for command-line tools.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <ul>
+<li>Install requirements as described in the next section.</li>
 <li>Clone the repo from Github into a hidden folder named .dotfiles:
 
 <ul>
 <li><code>cd ~</code></li>
-<li><code>git clone git@github.com:akosmasoftware/dotfiles.git .dotfiles</code></li>
+<li><code>git clone git@github.com:akosma/dotfiles.git .dotfiles</code></li>
+<li><code>cd .dotfiles</code></li>
 </ul>
 </li>
 <li>Run the install.sh folder to create symlinks:
 
 <ul>
-<li><code>.dotfiles/install.sh</code></li>
+<li><code>./install.sh</code></li>
 </ul>
 </li>
-<li>Boum! You have configured a new computer with your preferred defaults.</li>
-</ul><h2>Vim Plugins</h2>
-
-<p>The following plugins are installed by the <code>install.sh</code> plugin:</p>
-
-<ul>
-<li><a href="http://github.com/joestelmach/javaScriptLint.vim">http://github.com/joestelmach/javaScriptLint.vim</a></li>
-<li><a href="http://github.com/tpope/vim-ragtag">http://github.com/tpope/vim-ragtag</a></li>
-<li><a href="http://github.com/msanders/cocoa.vim">http://github.com/msanders/cocoa.vim</a></li>
-<li><a href="http://github.com/Rip-Rip/clang_complete">http://github.com/Rip-Rip/clang_complete</a></li>
-<li><a href="http://github.com/vim-scripts/loremipsum">http://github.com/vim-scripts/loremipsum</a></li>
-<li><a href="http://github.com/vim-scripts/YankRing.vim">http://github.com/vim-scripts/YankRing.vim</a></li>
-<li><a href="http://github.com/Lokaltog/vim-powerline">http://github.com/Lokaltog/vim-powerline</a></li>
-<li><a href="http://github.com/kana/vim-smartinput">http://github.com/kana/vim-smartinput</a></li>
-</ul><h2>Requirements</h2>
+</ul><h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <p>This installation provides defaults for:</p>
 
 <ul>
-<li><a href="http://www.tcsh.org/Welcome">tcsh</a></li>
-<li><a href="http://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a></li>
-<li>
-<a href="http://www.vim.org/">vim</a> + <a href="http://code.google.com/p/macvim/">MacVim</a> + <a href="https://github.com/carlhuda/janus">Janus</a>
-</li>
 <li>
 <a href="http://www.zsh.org/">zsh</a> + <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>
 </li>
+<li>
+<a href="http://www.vim.org/">vim</a> + <a href="http://code.google.com/p/macvim/">MacVim</a> + <a href="https://github.com/carlhuda/janus">Janus</a>
+</li>
+<li><a href="http://www.tcsh.org/Welcome">tcsh</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a></li>
+</ul><p>You might want to install <a href="http://brew.sh">Homebrew</a>, and then issue the following
+commands:</p>
+
+<ul>
+<li><code>brew tap homebrew/binary</code></li>
+<li>
+<code>brew install jsl</code> (required by the javaScriptLint.vim plugin)</li>
 </ul><p>For maximum compatibility with the <a href="https://github.com/Lokaltog/vim-powerline">Powerline plugin</a>, you might want
 to download a patched version of <a href="https://gist.github.com/1695735/">Bitstream Vera Sans Mono</a>.</p>
-      </section>
+        </section>
 
+        <footer>
+          .dotfiles is maintained by <a href="https://github.com/akosma">akosma</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-    
   </body>
 </html>
