@@ -3,7 +3,7 @@ if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
 
-" Color 
+" Color
 colorscheme Tomorrow
 
 " Change the default font
@@ -25,7 +25,7 @@ set autowriteall
 
 " This is to set print options to landscape
 " http://vimdoc.sourceforge.net/htmldoc/print.html
-set printoptions=paper:A4,syntax:y,portrait:n  
+set printoptions=paper:A4,syntax:y,portrait:n
 
 " Presentation colors and config
 " Adapted from

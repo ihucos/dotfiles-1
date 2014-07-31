@@ -5,12 +5,6 @@ alias h="cd ~"
 alias q="exit"
 alias x="exit"
 
-# Avoid having a hidden ~/Library folder in Lion!
-chflags nohidden ~/Library
-
-alias status="svn status --ignore-externals"
-alias keywords="svn propset svn:keywords 'LastChangedDate LastChangedRevision LastChangedBy HeadURL Id' *"
-
 # Adapted from
 # http://www.cocoanetics.com/2012/02/my-terminal-is-less-boring-than-yours/
 export CLICOLOR=1
@@ -26,8 +20,4 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 TERM=xterm-256color
-
-
-export SENCHA_CMD_3_0_0="/Users/adrian/bin/Sencha/Cmd/4.0.0.203"
-export PATH=/Users/adrian/bin/Sencha/Cmd/4.0.0.203:$PATH
 

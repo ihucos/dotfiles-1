@@ -5,23 +5,11 @@ alias h "cd ~"
 alias q "exit"
 alias x "exit"
 
-alias status "svn status --ignore-externals"
-alias keywords "svn propset svn:keywords 'LastChangedDate LastChangedRevision LastChangedBy HeadURL Id' *"
-
-# This trick to use RVM with TCSH comes from
-# http://po-ru.com/diary/using-rvm-with-tcsh/
-# Check out the ~/.rvm.tcsh file for more info!
-alias rvm "~/.rvm.tcsh"
-
 cd ~/Desktop
 
 # Fancy prompt
 set prompt="%S %n@%m: %d %D %w %Y, %P %s\n%B[%~]\n$ %b"
 
 setenv PATH ~/.cabal/bin:/sw/bin:/usr/local/git/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/share/pear/bin:/opt/local/bin:$PATH
-setenv RUBYOPT rubygems
 setenv EDITOR vim
-
-setenv SENCHA_CMD_3_0_0 "/Users/adrian/bin/Sencha/Cmd/4.0.0.203"
-set path=( "/Users/adrian/bin/Sencha/Cmd/4.0.0.203" $path )
 

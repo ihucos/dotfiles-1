@@ -1,9 +1,6 @@
 # Customize to your needs...
 export PATH=~/.cabal/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/texbin:/opt/local/bin
 
-# Postgres
-export PATH=/Applications/Postgres93.app/Contents/MacOS/bin:$PATH
-
 # Trick coming from
 # http://stackoverflow.com/a/14138490/133764
 export PATH=$(brew --prefix ruby)/bin:$PATH
@@ -48,19 +45,12 @@ PROMPT='%{$bg[red]%}%{$fg[white]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
 # To be able to use `symbolicatecrash` we need this variable:
 export DEVELOPER_DIR=`xcode-select --print-path`
 
-# For Android development
-export ANDROID_HOME=/Applications/Android/sdk
-
 # Some aliases
 alias d="cd ~/Desktop"
 alias u="cd .."
 alias h="cd ~"
 alias q="exit"
 alias x="exit"
-
-alias git-svn-clone-externals=~/.janus/git-svn-clone-externals/git-svn-clone-externals
-
-alias jenkins="java -jar /usr/local/opt/jenkins/libexec/jenkins.war"
 
 # Some settings to get the battery level from the command line
 export CUTE_BATTERY_INDICATOR=Yes
