@@ -22,19 +22,18 @@ fi
 # Create the required extensions dir
 mkdir $DIR
 
-# Manually install asciidoc plugin
+# Manually install other plugins
 cp -R other/asciidoc $DIR
+cp -R other/jslint $DIR
 
 # Clone repos with other plugins
 cd $DIR
-git clone git://github.com/vim-scripts/lint.vim.git
 git clone git://github.com/tpope/vim-ragtag.git
 git clone git://github.com/vim-scripts/loremipsum.git
 git clone git://github.com/vim-scripts/YankRing.vim.git
 git clone git://github.com/Lokaltog/vim-powerline.git
 git clone git://github.com/kana/vim-smartinput.git
 git clone git://github.com/tomtom/tcomment_vim
-git clone git://github.com/vim-scripts/ShowMarks.git
 git clone git://github.com/vim-scripts/taglist.vim.git
 git clone git://github.com/kballard/vim-swift.git
 

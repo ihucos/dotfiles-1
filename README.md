@@ -7,32 +7,13 @@ I regularly use for command-line apps.
 Installation
 ------------
 
+- Install requirements as described in the next section.
 - Clone the repo from Github into a hidden folder named .dotfiles:
     - `cd ~`
-    - `- http://github.com/akosmasoftware/dotfiles.git .dotfiles`
+    - `- http://github.com/akosma/dotfiles.git .dotfiles`
 - Run the install.sh folder to create symlinks:
     - `.dotfiles/install.sh`
 - Boum! You have configured a new computer with your preferred defaults.
-
-Vim Plugins
------------
-
-The following plugins are installed by the `install.sh` plugin:
-
-- http://github.com/joestelmach/javaScriptLint.vim.git
-- http://github.com/tpope/vim-ragtag.git
-- http://github.com/msanders/cocoa.vim.git
-- http://github.com/Rip-Rip/clang_complete.git
-- http://github.com/vim-scripts/loremipsum.git
-- http://github.com/vim-scripts/YankRing.vim.git
-- http://github.com/Lokaltog/vim-powerline.git
-- http://github.com/kana/vim-smartinput.git
-- http://github.com/groenewege/vim-less.git
-- http://github.com/tpope/vim-haml.git
-- http://github.com/tomtom/tcomment_vim
-- http://github.com/altercation/vim-colors-solarized
-- http://github.com/vim-scripts/ShowMarks.git
-- http://github.com/cakebaker/scss-syntax.vim.git
 
 Requirements
 ------------
@@ -47,6 +28,12 @@ This installation provides defaults for:
 For maximum compatibility with the [Powerline plugin][8], you might want
 to download a patched version of [Bitstream Vera Sans Mono][9].
 
+You might also want to install [Homebrew][10], and then issue the
+following commands:
+
+- `brew tap homebrew/binary`
+- `brew install jsl` (required by the javaScriptLint.vim plugin)
+
 [1]:http://code.google.com/p/macvim/
 [2]:https://github.com/carlhuda/janus
 [3]:http://www.vim.org/
@@ -56,4 +43,5 @@ to download a patched version of [Bitstream Vera Sans Mono][9].
 [7]:https://github.com/robbyrussell/oh-my-zsh
 [8]:https://github.com/Lokaltog/vim-powerline
 [9]:https://gist.github.com/1695735/
+[10]:http://brew.sh
 
