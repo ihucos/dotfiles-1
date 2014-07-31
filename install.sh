@@ -22,11 +22,11 @@ fi
 # Create the required extensions dir
 mkdir $DIR
 
-# Manually install other plugins
+# Manually install Vim plugins
 cp -R other/asciidoc $DIR
 cp -R other/jslint $DIR
 
-# Clone repos with other plugins
+# Clone remote Vim plugins
 cd $DIR
 git clone git://github.com/tpope/vim-ragtag.git
 git clone git://github.com/vim-scripts/loremipsum.git

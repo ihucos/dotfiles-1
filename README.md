@@ -1,38 +1,34 @@
-Dotfiles
-========
+# Dotfiles
 
-This folder, stored as a git repo, contains all the configuration files
-I regularly use for command-line apps.
+This project contains configuration files for command-line tools.
 
-Installation
-------------
+## Installation
 
 - Install requirements as described in the next section.
 - Clone the repo from Github into a hidden folder named .dotfiles:
     - `cd ~`
-    - `- http://github.com/akosma/dotfiles.git .dotfiles`
+    - `git clone git@github.com:akosma/dotfiles.git .dotfiles`
+    - `cd .dotfiles`
 - Run the install.sh folder to create symlinks:
-    - `.dotfiles/install.sh`
-- Boum! You have configured a new computer with your preferred defaults.
+    - `./install.sh`
 
-Requirements
-------------
+## Requirements
 
 This installation provides defaults for:
 
+- [zsh][6] + [oh-my-zsh][7]
+- [vim][3] + [MacVim][1] + [Janus][2]
 - [tcsh][5]
 - [bash][4]
-- [vim][3] + [MacVim][1] + [Janus][2]
-- [zsh][6] + [oh-my-zsh][7]
 
-For maximum compatibility with the [Powerline plugin][8], you might want
-to download a patched version of [Bitstream Vera Sans Mono][9].
-
-You might also want to install [Homebrew][10], and then issue the
-following commands:
+You might want to install [Homebrew][10], and then issue the following
+commands:
 
 - `brew tap homebrew/binary`
 - `brew install jsl` (required by the javaScriptLint.vim plugin)
+
+For maximum compatibility with the [Powerline plugin][8], you might want
+to download a patched version of [Bitstream Vera Sans Mono][9].
 
 [1]:http://code.google.com/p/macvim/
 [2]:https://github.com/carlhuda/janus
