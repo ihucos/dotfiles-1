@@ -27,22 +27,14 @@ cp -R other/asciidoc $DIR
 
 # Clone repos with other plugins
 cd $DIR
-git clone git://github.com/joestelmach/javaScriptLint.vim.git
+git clone git://github.com/vim-scripts/lint.vim.git
 git clone git://github.com/tpope/vim-ragtag.git
-git clone git://github.com/msanders/cocoa.vim.git
 git clone git://github.com/vim-scripts/loremipsum.git
 git clone git://github.com/vim-scripts/YankRing.vim.git
 git clone git://github.com/Lokaltog/vim-powerline.git
 git clone git://github.com/kana/vim-smartinput.git
-git clone git://github.com/groenewege/vim-less.git
-git clone git://github.com/tpope/vim-haml.git
 git clone git://github.com/tomtom/tcomment_vim
-git clone git://github.com/altercation/vim-colors-solarized
 git clone git://github.com/vim-scripts/ShowMarks.git
-git clone git://github.com/cakebaker/scss-syntax.vim.git
-git clone git://github.com/nelstrom/vim-pml.git
 git clone git://github.com/vim-scripts/taglist.vim.git
-git clone git://github.com/andrep/git-svn-clone-externals.git
-git clone git://github.com/vim-scripts/Liquid-Carbon.git
 git clone git://github.com/kballard/vim-swift.git
 
