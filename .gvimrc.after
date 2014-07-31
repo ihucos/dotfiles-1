@@ -5,19 +5,9 @@ endif
 
 " Color 
 colorscheme Tomorrow
-"set bg=dark
 
 " Change the default font
 set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
-" set guifont=Anonymous\ Pro:h16
-" set guifont=Consolas:h14
-" set guifont=Inconsolata:h14
-
-" Easier to open the NERDTree
-map <F2> :NERDTreeToggle<CR>
-
-" http://mybyteofcode.blogspot.com/2011/01/build-xcode-project-from-within-vim.html
-set makeprg=xcodebuild\ 
 
 " Used for Markdown files
 " map <C-S-Down> :Mm<CR>
@@ -25,7 +15,6 @@ nnoremap <C-S-Down> :silent !open -a Marked.app "%:p"<cr>
 
 " These settings come from
 " http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/
-" set transparency=2
 set guioptions=aAce
 
 " Autosave when the app loses focus
@@ -44,7 +33,7 @@ set printoptions=paper:A4,syntax:y,portrait:n
 function! PresentationMode()
     set nolist
     " Change the default font
-    set guifont=Inconsolata:h20
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h20
 endfunction
 nmap <leader>PR :call PresentationMode()<cr>
 

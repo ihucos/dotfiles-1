@@ -6,10 +6,6 @@ autocmd BufEnter * lcd %:p:h
 " http://media.kbct.de/home/vim/doc/NERD_tree
 let NERDTreeShowHidden=1
 
-" Easier way to jump from header to implementation
-" map <C-M-Up> :A<CR>
-map <D-M-Up> :AT
-
 " Reverse command of J (join lines) adapted from
 " http://www.terminally-incoherent.com/blog/2012/03/21/why-vim/
 nmap <silent> <leader><CR> i<CR><ESC>
@@ -17,13 +13,6 @@ nmap <silent> <leader><CR> i<CR><ESC>
 set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
-
-" This from
-" http://vim.wikia.com/wiki/Easily_switch_between_source_and_header_file
-" map <D-M-Up> :e %:p:s,.h$,.X123X,:s,.m$,.h,:s,.X123X$,.m,<CR>
-
-" https://wincent.com/wiki/Vim_Xcode_integration
-let filetype_m='objc'
 
 " Mappings for the ragtag plugin
 let g:ragtag_global_maps = 1
@@ -34,10 +23,9 @@ set wrap
 set textwidth=80
 set wrapmargin=80
 set cursorline
-" set cursorcolumn
 
 " When the page starts to scroll, keep the cursor 8 lines from
-" the top and 8 lines from the bottom; taken from:
+" the top and 4 lines from the bottom; taken from:
 " http://www.derekwyatt.org/vim/the-vimrc-file/better-settings/
 set scrolloff=4
 
@@ -52,8 +40,7 @@ set softtabstop=4
 set expandtab
 set nolist
 
-" No sound on errors
-" Adapted from 
+" No sound on errors, adapted from
 " http://amix.dk/vim/vimrc.html
 " http://vim.wikia.com/wiki/Disable_beeping
 set errorbells
@@ -63,10 +50,8 @@ set tm=500
 
 " This one comes from
 " http://stackoverflow.com/questions/1480043/automatically-center-vim-search-results
-:nmap n nzz  
+:nmap n nzz
 :nmap p pzz
-" :nmap j jzz
-" :nmap k kzz
 
 " Center the buffer on the screen when you go to the bottom of it
 :nmap <S-G> <S-G>zz
@@ -77,55 +62,9 @@ set notimeout
 set ttimeout
 set timeoutlen=50
 
-" This one comes from
-" http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html
-map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
-
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 " http://stackoverflow.com/a/7078429/133764
 cmap w!! w !sudo tee > /dev/null %
-
-" This comes from
-" http://vim.wikia.com/wiki/Pretty-formatting_XML
-function! DoPrettyXML()
-    " save the filetype so we can restore it later
-    let l:origft = &ft
-    set ft=
-    " delete the xml header if it exists. This will
-    " permit us to surround the document with fake tags
-    " without creating invalid xml.
-    1s/<?xml .*?>//e
-    " insert fake tags around the entire document.
-    " This will permit us to pretty-format excerpts of
-    " XML that may contain multiple top-level elements.
-    0put ='<PrettyXML>'
-    $put ='</PrettyXML>'
-    silent %!xmllint --format -
-    " xmllint will insert an <?xml?> header. it's easy enough to delete
-    " if you don't want it.
-    " delete the fake tags
-    2d
-    $d
-    " restore the 'normal' indentation, which is one extra level
-    " too deep due to the extra tags we wrapped around the document.
-    silent %<
-    " back to home
-    1
-    " restore the filetype
-    exe "set ft=" . l:origft
-endfunction
-command! PrettyXML call DoPrettyXML()
-map <leader>jx  <Esc>:PrettyXML<CR>
-
-" First attempt at a custom command to see all the TODO entries in the quickfix
-" window...
-map <leader>td <Esc>:vimgrep /TODO\:/ **/*.*<CR>:copen<CR>
-
-" This one is to clean HTML files
-" http://vim.wikia.com/wiki/Cleanup_your_HTML
-" It requires installing HTML Tidy using Homebrew:
-" brew install https://raw.github.com/adamv/homebrew-alt/master/duplicates/tidy.rb
-vmap ,x :!tidy -q -i -utf8<CR>
 
 " Associate files to the proper extension as explained in
 " http://beerpla.net/2008/04/02/how-to-add-a-vim-file-extension-to-syntax-highlighting/
@@ -163,24 +102,14 @@ endif
 " The color schemes can be seen here
 " http://www.vi-improved.org/color_sampler_pack/
 set t_Co=64 " Explicitly tell vim that the terminal supports 64 colors
-" set background=light
-"colorscheme liquidcarbon
-"colorscheme railscasts
 colorscheme adaryn
 
 " Shortcut to display the list of tags
-let mapleader = "," 
+let mapleader = ","
 nmap <Leader>/ :TlistToggle<CR>
 
 " Shortcut to regenerate the tag file
 nmap <Leader>rt :!ctags -R *<CR>
-
-" For PML files, use 'soft tabs' (i.e. spaces) fo 2 column width
-autocmd FileType pml setlocal ts=2 sts=2 sw=2 expandtab foldlevelstart=0
-
-" Make VISUAL-BLOCK mode select whitespace too
-" http://stackoverflow.com/a/17867085/133764
-set virtualedit=all
 
 " Map a key to remove unwanted whitespace at the end of lines by pressing F6
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
