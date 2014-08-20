@@ -36,4 +36,5 @@ git clone git://github.com/kana/vim-smartinput.git
 git clone git://github.com/tomtom/tcomment_vim
 git clone git://github.com/vim-scripts/taglist.vim.git
 git clone git://github.com/kballard/vim-swift.git
+git clone git://github.com/rizzatti/dash.vim.git
 
