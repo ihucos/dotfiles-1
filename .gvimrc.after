@@ -31,9 +31,14 @@ set printoptions=paper:A4,syntax:y,portrait:n
 " Adapted from
 " http://vim.devth.com/presentation-mode-for-vim
 function! PresentationMode()
-    set nolist
     " Change the default font
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h18
+    if exists("g:presmode")
+        set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
+        unlet g:presmode
+    else
+        set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h18
+        let g:presmode=1
+    endif
 endfunction
 nmap <leader>PR :call PresentationMode()<cr>
 
