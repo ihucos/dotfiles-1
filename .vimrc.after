@@ -111,6 +111,10 @@ nmap <Leader>/ :TlistToggle<CR>
 " Shortcut to regenerate the tag file
 nmap <Leader>rt :!ctags -R *<CR>
 
+" Make VISUAL-BLOCK mode select whitespace too
+" http://stackoverflow.com/a/17867085/133764
+set virtualedit=all
+
 " Map a key to remove unwanted whitespace at the end of lines by pressing F6
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 nnoremap <silent> <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
