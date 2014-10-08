@@ -119,3 +119,6 @@ set virtualedit=all
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 nnoremap <silent> <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+" Make pretty JSON
+nmap <Leader>json :%!python -m json.tool<CR>
+
