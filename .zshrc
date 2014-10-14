@@ -80,6 +80,9 @@ setopt NO_BEEP
 # http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
+# Access to clang-format provided by the ClangFormat Xcode plugin
+alias clang-format="~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/ClangFormat.xcplugin/Contents/Resources/clang-format"
+
 # Some custom commands go here
 function tmuxx {
     tmux ls | grep akosma
