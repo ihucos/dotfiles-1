@@ -83,6 +83,11 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 # Access to clang-format provided by the ClangFormat Xcode plugin
 alias clang-format="~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/ClangFormat.xcplugin/Contents/Resources/clang-format"
 
+# Docker-related configuration
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
 # Some custom commands go here
 function tmuxx {
     tmux ls | grep akosma
