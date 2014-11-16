@@ -128,13 +128,10 @@ function updateall {
     brew upgrade
 
     echo "============================"
-    echo "brew cleanup"
+    echo "brew cleanup, linkapps, prune"
     brew cleanup
-
-    echo "============================"
-    echo "brew linkapps"
-    rm -r ~/Applications
-    mkdir ~/Applications
+    brew cask cleanup
+    brew prune
     brew linkapps
 
     echo "============================"
