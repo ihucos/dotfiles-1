@@ -126,25 +126,19 @@ function updateall {
     echo "Updating Homebrew"
     brew update
     brew upgrade
-
-    echo "============================"
-    echo "brew cleanup, linkapps, prune"
     brew cleanup
     brew cask cleanup
     brew prune
     brew linkapps
-
-    echo "============================"
-    echo "brew doctor"
     brew doctor
 
     #echo "============================"
     #echo "Updating NPM"
     #npm update -g
 
-    echo "============================"
-    echo "Updating Haskell / cabal"
-    cabal update
+    #echo "============================"
+    #echo "Updating Haskell / cabal"
+    #cabal update
 
     #echo "============================"
     #echo "Updating Rubygems (requires Ruby 1.9)"
