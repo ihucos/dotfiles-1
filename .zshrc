@@ -1,9 +1,5 @@
 # Customize to your needs...
-export PATH=~/.cabal/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/texbin:/opt/local/bin
-
-# Trick coming from
-# http://stackoverflow.com/a/14138490/133764
-export PATH=$(brew --prefix ruby)/bin:$PATH
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/texbin:/opt/local/bin
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -13,10 +9,6 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
-
-# Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Comment this out to disable weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
@@ -83,11 +75,6 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 # Access to clang-format provided by the ClangFormat Xcode plugin
 alias clang-format="~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/ClangFormat.xcplugin/Contents/Resources/clang-format"
 
-# Docker-related configuration
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
 # Some custom commands go here
 function tmuxx {
     tmux ls | grep akosma
@@ -131,19 +118,6 @@ function updateall {
     brew prune
     brew linkapps
     brew doctor
-
-    #echo "============================"
-    #echo "Updating NPM"
-    #npm update -g
-
-    #echo "============================"
-    #echo "Updating Haskell / cabal"
-    #cabal update
-
-    #echo "============================"
-    #echo "Updating Rubygems (requires Ruby 1.9)"
-    #gem update --system
-    #gem update
 
     echo "============================"
     echo "Updating Janus"
