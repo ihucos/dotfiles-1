@@ -100,16 +100,16 @@ function gitsvnpush {
 
 function updateall {
     echo "============================"
-    echo "Updating oh my zsh"
     upgrade_oh_my_zsh
 
     echo "============================"
-    echo "Updating .dotfiles"
+    printf '\033[0;34m%s\033[0m\n' "Upgrading .dotfiles"
     cd ~/.dotfiles
+    git status
     git pull
 
     echo "============================"
-    echo "Updating Homebrew"
+    printf '\033[0;34m%s\033[0m\n' "Upgrading Homebrew"
     brew update
     brew upgrade
     brew cleanup
@@ -119,14 +119,14 @@ function updateall {
     brew doctor
 
     echo "============================"
-    echo "Updating Janus"
+    printf '\033[0;34m%s\033[0m\n' "Upgrading Janus"
     cd ~/.vim
     rake
 
     cd ~/.janus
     for dir in *; do
         echo "============================"
-        echo "Updating $dir"
+        printf '\033[0;34m%s\033[0m\n' "Upgrading $dir"
         cd $dir
         git pull
         cd ..
