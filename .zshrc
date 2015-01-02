@@ -99,6 +99,7 @@ function gitsvnpush {
 }
 
 function updateall {
+    original_path=`pwd`
     upgrade_oh_my_zsh
 
     echo "----------------------------"
@@ -130,6 +131,7 @@ function updateall {
         git pull
         cd ..
     done
+    cd $original_path
 }
 
 function ascstats {
