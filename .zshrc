@@ -37,6 +37,9 @@ PROMPT='%{$bg[red]%}%{$fg[white]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
 # To be able to use `symbolicatecrash` we need this variable:
 export DEVELOPER_DIR=`xcode-select --print-path`
 
+# For Android stuff
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 # Some aliases
 alias d="cd ~/Desktop"
 alias u="cd .."
