@@ -12,3 +12,8 @@ let g:Powerline_symbols = 'fancy'
 " Solarized colors
 let g:solarized_termcolors=256
 
+" Settings for the Swift plugin
+let g:swift_developer_dir='/Applications/Xcode-Beta.app'
+let g:swift_platform="iphoneos"
+let g:swift_device="iPhone 6"
+

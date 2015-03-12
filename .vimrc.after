@@ -105,12 +105,9 @@ set t_Co=64 " Explicitly tell vim that the terminal supports 64 colors
 set background=light
 colorscheme solarized
 
-" Shortcut to display the list of tags
+" CtrlP
 let mapleader = ","
-nmap <Leader>/ :TlistToggle<CR>
-
-" Shortcut to regenerate the tag file
-nmap <Leader>rt :!ctags -R *<CR>
+nmap <Leader>p :CtrlP<CR>
 
 " Make VISUAL-BLOCK mode select whitespace too
 " http://stackoverflow.com/a/17867085/133764
@@ -118,7 +115,7 @@ set virtualedit=all
 
 " Map a key to remove unwanted whitespace at the end of lines by pressing F6
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
-nnoremap <silent> <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+nnoremap <silent> <F6> :FixWhitespace
 
 " Make pretty JSON
 nmap <Leader>json :%!python -m json.tool<CR>
