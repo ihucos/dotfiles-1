@@ -39,6 +39,3 @@ set guioptions-=a
 set guioptions-=A
 set guioptions-=aA
 
-" New shortcut for NERDTree on MacVim
-map <D-N> :NERDTreeToggle<CR>
-

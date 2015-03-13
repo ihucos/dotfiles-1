@@ -19,5 +19,4 @@ let g:swift_device="iPhone 6"
 
 " CtrlP settings
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_map = '<D-O>'
 
