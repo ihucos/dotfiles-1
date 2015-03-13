@@ -47,6 +47,11 @@ alias h="cd ~"
 alias q="exit"
 alias x="exit"
 
+# Some custom configuration and aliases, not present in every computer
+if [ -f $HOME/.local_bash_profile ]; then
+    source $HOME/.local_bash_profile
+fi
+
 # Some settings to get the battery level from the command line
 export CUTE_BATTERY_INDICATOR=Yes
 alias battery="~/.dotfiles/battery.sh Charging; ~/.dotfiles/battery.sh Discharging"

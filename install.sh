@@ -11,6 +11,9 @@ while [ $i -lt $len ]; do
     let i++
 done
 
+touch ~/.dotfiles/.local_bash_profile
+ln -s ~/.dotfiles/.local_bash_profile ~/.local_bash_profile
+
 # Install Vim .janus extensions
 DIR=~/.janus
 
