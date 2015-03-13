@@ -1,17 +1,8 @@
-" Include user's local vim config
-if filereadable(expand("~/.vimrc.after"))
-  source ~/.vimrc.after
-endif
-
 " Color
 colorscheme solarized
 
 " Change the default font
 set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
-
-" Used for Markdown files
-" map <C-S-Down> :Mm<CR>
-nnoremap <C-S-Down> :silent !open -a Marked.app "%:p"<cr>
 
 " These settings come from
 " http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/
@@ -47,4 +38,7 @@ nmap <leader>PR :call PresentationMode()<cr>
 set guioptions-=a
 set guioptions-=A
 set guioptions-=aA
+
+" New shortcut for NERDTree on MacVim
+map <D-N> :NERDTreeToggle<CR>
 

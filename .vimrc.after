@@ -106,7 +106,7 @@ set background=light
 colorscheme solarized
 
 " CtrlP
-let mapleader = ","
+"let mapleader = ","
 nmap <Leader>p :CtrlP<CR>
 
 " Make VISUAL-BLOCK mode select whitespace too
@@ -115,7 +115,7 @@ set virtualedit=all
 
 " Map a key to remove unwanted whitespace at the end of lines by pressing F6
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
-nnoremap <silent> <F6> :FixWhitespace
+nnoremap <silent> <F6> :FixWhitespace<CR>
 
 " Make pretty JSON
 nmap <Leader>json :%!python -m json.tool<CR>

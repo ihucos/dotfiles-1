@@ -17,6 +17,7 @@ let g:swift_developer_dir='/Applications/Xcode-Beta.app'
 let g:swift_platform="iphoneos"
 let g:swift_device="iPhone 6"
 
-" CtrlP should show dotfiles and dotdirs
+" CtrlP settings
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_map = '<D-O>'
 
