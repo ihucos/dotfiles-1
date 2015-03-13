@@ -120,3 +120,6 @@ nnoremap <silent> <F6> :FixWhitespace<CR>
 " Make pretty JSON
 nmap <Leader>json :%!python -m json.tool<CR>
 
+" Add files and folders to ignore, particularly for CtrlP
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/build/*,*/docs/*,*/Pods/*
+
