@@ -3,3 +3,6 @@ if filereadable(expand("~/.vimrc.before"))
   source ~/.vimrc.before
 endif
 
+" Make CtrlP work with the 'Command-Shift-O' shortcut on MacVim
+let g:ctrlp_map = '<D-O>'
+
