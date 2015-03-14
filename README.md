@@ -27,9 +27,8 @@ commands:
 - `brew tap homebrew/binary`
 - `brew install jsl` (required by the javaScriptLint.vim plugin)
 
-For maximum compatibility with the [Powerline plugin][8], you might want
-to install the patched version of [Bitstream Vera Sans Mono][9] included
-in the `fonts` subdirectory.
+For maximum compatibility with the [vim-airline plugin][8], you might
+want to install the patched version of [DejaVu Sans Mono][9].
 
 [1]:http://code.google.com/p/macvim/
 [2]:https://github.com/carlhuda/janus
@@ -38,7 +37,7 @@ in the `fonts` subdirectory.
 [5]:http://www.tcsh.org/Welcome
 [6]:http://www.zsh.org/
 [7]:https://github.com/robbyrussell/oh-my-zsh
-[8]:https://github.com/Lokaltog/vim-powerline
-[9]:https://gist.github.com/9mm/1695735
+[8]:https://github.com/bling/vim-airline
+[9]:https://github.com/powerline/fonts
 [10]:http://brew.sh
 
