@@ -125,3 +125,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/build/*,*/docs/*,*/Pods/*
 " New shortcut for NERDTree on MacVim
 map <C-N> :NERDTreeToggle<CR>
 
+" Shortcut for showing the tagbar
+nmap <F8> :TagbarToggle<CR>
+
