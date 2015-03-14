@@ -25,12 +25,12 @@ let g:ctrlp_show_hidden = 1
 let g:tagbar_type_asciidoc = {
     \ 'ctagstype' : 'asciidoc',
     \ 'kinds' : [
-        \ 'h:table of contents',
-        \ 'a:anchors:1',
-        \ 't:titles:1',
-        \ 'n:includes:1',
-        \ 'i:images:1',
-        \ 'I:inline images:1'
+        \ 'h:Table of Contents',
+        \ 'a:Anchors:1',
+        \ 't:Titles:1',
+        \ 'n:Includes:1',
+        \ 'i:Images:1',
+        \ 'I:Inline Images:1'
     \ ],
     \ 'sort' : 0
 \ }
@@ -38,8 +38,8 @@ let g:tagbar_type_asciidoc = {
 " Support for Makefiles in tagbar
 let g:tagbar_type_make = {
             \ 'kinds':[
-                \ 'm:macros',
-                \ 't:targets'
+                \ 'm:Macros',
+                \ 't:Targets'
             \ ]
 \}
 
@@ -47,10 +47,9 @@ let g:tagbar_type_make = {
 let g:tagbar_type_markdown = {
     \ 'ctagstype' : 'markdown',
     \ 'kinds' : [
-        \ 'h:Heading_L1',
-        \ 'i:Heading_L2',
-        \ 'k:Heading_L3'
-    \ ]
+        \ 'h:Table of Contents',
+    \ ],
+    \ 'sort' : 0
 \ }
 
 " Support for Objective-C in tagbar
