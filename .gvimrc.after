@@ -2,7 +2,7 @@
 colorscheme solarized
 
 " Change the default font
-set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
 
 " These settings come from
 " http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/
