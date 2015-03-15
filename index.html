@@ -3,41 +3,72 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
     <title>.dotfiles by akosma</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>.dotfiles</h1>
-          <h2>Configuration files for several command-line tools</h2>
-        </header>
+    <header>
+      <div class="container">
+        <h1>.dotfiles</h1>
+        <h2>Configuration files for several command-line tools</h2>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/akosma/dotfiles/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/akosma/dotfiles/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/akosma/dotfiles" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        <section id="downloads">
+          <a href="https://github.com/akosma/dotfiles/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/akosma/dotfiles/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/akosma/dotfiles" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
+      </div>
+    </header>
 
-        <hr>
-
-        <section id="main_content">
-          <h1>
-<a name="dotfiles" class="anchor" href="#dotfiles"><span class="octicon octicon-link"></span></a>Dotfiles</h1>
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="dotfiles" class="anchor" href="#dotfiles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dotfiles</h1>
 
 <p>This project contains configuration files for command-line tools.</p>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>This installation provides defaults for:</p>
+
+<ul>
+<li>
+<a href="http://www.zsh.org/">zsh</a> + <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>
+</li>
+<li>
+<a href="http://www.vim.org/">vim</a> + <a href="https://github.com/b4winckler/macvim">MacVim</a> + <a href="https://github.com/carlhuda/janus">Janus</a>
+</li>
+<li><a href="http://www.tcsh.org/">tcsh</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a></li>
+</ul>
+
+<p>You might want to install <a href="http://brew.sh">Homebrew</a>, and then issue the following
+commands:</p>
+
+<ul>
+<li><code>brew tap homebrew/binary</code></li>
+<li>
+<code>brew install jsl</code> (required by the javaScriptLint.vim plugin)</li>
+<li>
+<code>brew install ctags</code> (required by the <a href="https://majutsushi.github.io/tagbar/">Tagbar</a> vim plugin)</li>
+<li>
+<code>brew install reattach-to-user-namespace</code> (required to be able to copy
+text from tmux to the OS X pasteboard)</li>
+</ul>
+
+<p>For maximum compatibility with the <a href="https://github.com/bling/vim-airline">vim-airline plugin</a>, you
+might want to install the patched version of <a href="https://github.com/powerline/fonts">DejaVu Sans
+Mono</a>.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <ul>
 <li>Install requirements as described in the next section.</li>
@@ -49,44 +80,82 @@
 <li><code>cd .dotfiles</code></li>
 </ul>
 </li>
-<li>Run the install.sh folder to create symlinks:
+<li>Run the install.sh folder to create symlinks and clone plugins in the
+<code>~/.janus</code> folder:
 
 <ul>
 <li><code>./install.sh</code></li>
 </ul>
 </li>
-</ul><h2>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+</ul>
 
-<p>This installation provides defaults for:</p>
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
 
-<ul>
-<li>
-<a href="http://www.zsh.org/">zsh</a> + <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>
-</li>
-<li>
-<a href="http://www.vim.org/">vim</a> + <a href="http://code.google.com/p/macvim/">MacVim</a> + <a href="https://github.com/carlhuda/janus">Janus</a>
-</li>
-<li><a href="http://www.tcsh.org/Welcome">tcsh</a></li>
-<li><a href="http://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a></li>
-</ul><p>You might want to install <a href="http://brew.sh">Homebrew</a>, and then issue the following
-commands:</p>
+<p>These configuration files provide the following features, among many
+others:</p>
 
 <ul>
-<li><code>brew tap homebrew/binary</code></li>
+<li>In zsh:
+
+<ul>
+<li>Custom prompt with more information and with visual contrast.</li>
+<li>The <code>ascstats</code> command shows statistics about number of words in
+the current Asciidoc files.</li>
+<li>The <code>updateall</code> command updates of Homebrew, janus, and these
+dotfiles to the latest versions.</li>
+<li>The <code>gitsvnpush</code> command synchronises a local Git repo with a
+remote Subversion repository.</li>
+<li>Custom output for the <code>git log</code> command.</li>
+<li>The <code>fixopenwith</code> command solves a common problem in OS X.</li>
+</ul>
+</li>
+<li>In tmux:
+
+<ul>
+<li>[SHIFT + left arrow] and [SHIFT + right arrow] switch windows to
+the next (or previous.)</li>
+<li>[SHIFT + down arrow] creates new windows in the current session.</li>
+<li>Battery level displayed in the status line.</li>
+<li>Possible to copy text back and forth using the standard OS X
+pasteboard (thanks to <code>reattach-to-user-namespace</code>.)</li>
+</ul>
+</li>
+<li>In Vim / MacVim:
+
+<ul>
+<li>[F5] opens <a href="http://sjl.bitbucket.org/gundo.vim/">Gundo</a> at the left.</li>
+<li>[F8] opens <a href="https://majutsushi.github.io/tagbar/">Tagbar</a> at the right.</li>
+<li>[F6] removes whitespace from the current buffer.</li>
+<li>[CTRL + N] toggles the <a href="https://github.com/scrooloose/nerdtree">NERDTree</a> at the left.</li>
+<li>[CTRL + T] and also [CMD + T] in MacVim open the <a href="https://github.com/kien/ctrlp.vim">CtrlP</a>
+plugin window.</li>
 <li>
-<code>brew install jsl</code> (required by the javaScriptLint.vim plugin)</li>
-</ul><p>For maximum compatibility with the <a href="https://github.com/Lokaltog/vim-powerline">Powerline plugin</a>, you might want
-to download a patched version of <a href="https://gist.github.com/1695735/">Bitstream Vera Sans Mono</a>.</p>
-        </section>
+<code>zz</code> centers the current line in the middle of the screen in
+normal mode.</li>
+<li>
+<code>&lt;Leader&gt;+json</code> formats the current JSON on the editor for
+readability.</li>
+<li>
+<code>&lt;Leader&gt;+PR</code> toggles MacVim in a "presentation mode" with bigger
+fonts, for demos and teaching.</li>
+<li>
+<code>ctags</code> syntax definitions for <a href="http://www.methods.co.nz/asciidoc/">Asciidoc</a>, Makefiles,
+<a href="http://daringfireball.net/projects/markdown/">Markdown</a> and Objective-C.</li>
+</ul>
+</li>
+</ul>
 
-        <footer>
-          .dotfiles is maintained by <a href="https://github.com/akosma">akosma</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+<h2>
+<a id="custom-configuration" class="anchor" href="#custom-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Custom configuration</h2>
 
-        
-      </div>
+<p>If you want to add your own configuration to zsh and tmux, add it to the
+files named <code>.local_bash_profile</code> and <code>.local_tmux.conf</code> in the
+<code>.dotfiles</code> folder; the contents of these two files will be loaded
+automatically at the end of the respective configuration files.</p>
+      </section>
     </div>
+
+    
   </body>
 </html>
