@@ -12,7 +12,9 @@ while [ $i -lt $len ]; do
 done
 
 touch ~/.dotfiles/.local_bash_profile
+touch ~/.dotfiles/.local_tmux.conf
 ln -s ~/.dotfiles/.local_bash_profile ~/.local_bash_profile
+ln -s ~/.dotfiles/.local_tmux.conf ~/.local_tmux.conf
 
 # Install Vim .janus extensions
 DIR=~/.janus
