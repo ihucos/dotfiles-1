@@ -81,11 +81,20 @@ au BufNewFile,BufRead *.md set filetype=markdown
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
-" Formatting lists in asciidoc requires these commands
+" Better formatting of comments in C, C++, Objective-C, Java...
+autocmd BufWinEnter,BufNewFile *.m setlocal formatoptions=croql
+autocmd BufWinEnter,BufNewFile *.h setlocal formatoptions=croql
+autocmd BufWinEnter,BufNewFile *.c setlocal formatoptions=croql
+autocmd BufWinEnter,BufNewFile *.cpp setlocal formatoptions=croql
+autocmd BufWinEnter,BufNewFile *.java setlocal formatoptions=croql
+autocmd BufWinEnter,BufNewFile *.cs setlocal formatoptions=croql
+autocmd BufWinEnter,BufNewFile *.js setlocal formatoptions=croql
+
+" Better formatting in asciidoc
 " http://www.methods.co.nz/asciidoc/userguide.html#X20
-set formatoptions=tcqn
-set formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\\|^\\s*<\\d\\+>\\s\\+\\\\|^\\s*[a-zA-Z.]\\.\\s\\+\\\\|^\\s*[ivxIVX]\\+\\.\\s\\+
-set comments=s1:/*,ex:*/,://,b:#,:%,:XCOMM,fb:-,fb:*,fb:+,fb:.,fb:>
+autocmd BufWinEnter,BufNewFile *.asciidoc setlocal formatoptions=tcqn
+autocmd BufWinEnter,BufNewFile *.asciidoc setlocal comments=s1:/*,ex:*/,://,b:#,:%,:XCOMM,fb:-,fb:*,fb:+,fb:.,fb:>
+autocmd BufWinEnter,BufNewFile *.asciidoc setlocal formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\\|^\\s*<\\d\\+>\\s\\+\\\\|^\\s*[a-zA-Z.]\\.\\s\\+\\\\|^\\s*[ivxIVX]\\+\\.\\s\\+
 
 " Show the correct, thin cursor in insert mode in vim when running
 " inside iTerm2 + tmux (boom)
