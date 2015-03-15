@@ -2,6 +2,28 @@
 
 This project contains configuration files for command-line tools.
 
+## Requirements
+
+This installation provides defaults for:
+
+- [zsh][zsh] + [oh-my-zsh][ohmyzsh]
+- [vim][vim] + [MacVim][macvim] + [Janus][janus]
+- [tcsh][tcsh]
+- [bash][bash]
+
+You might want to install [Homebrew][homebrew], and then issue the following
+commands:
+
+- `brew tap homebrew/binary`
+- `brew install jsl` (required by the javaScriptLint.vim plugin)
+- `brew install ctags` (required by the [Tagbar][tagbar] vim plugin)
+- `brew install reattach-to-user-namespace` (required to be able to copy
+  text from tmux to the OS X pasteboard)
+
+For maximum compatibility with the [vim-airline plugin][airline], you
+might want to install the patched version of [DejaVu Sans
+Mono][dejavusans].
+
 ## Installation
 
 - Install requirements as described in the next section.
@@ -9,35 +31,70 @@ This project contains configuration files for command-line tools.
     - `cd ~`
     - `git clone git@github.com:akosma/dotfiles.git .dotfiles`
     - `cd .dotfiles`
-- Run the install.sh folder to create symlinks:
+- Run the install.sh folder to create symlinks and clone plugins in the
+  `~/.janus` folder:
     - `./install.sh`
 
-## Requirements
+## Features
 
-This installation provides defaults for:
+These configuration files provide the following features, among many
+others:
 
-- [zsh][6] + [oh-my-zsh][7]
-- [vim][3] + [MacVim][1] + [Janus][2]
-- [tcsh][5]
-- [bash][4]
+- In zsh:
+    - Custom prompt with more information and with visual contrast.
+    - The `ascstats` command shows statistics about number of words in
+      the current Asciidoc files.
+    - The `updateall` command updates of Homebrew, janus, and these
+      dotfiles to the latest versions.
+    - The `gitsvnpush` command synchronises a local Git repo with a
+      remote Subversion repository.
+    - Custom output for the `git log` command.
+    - The `fixopenwith` command solves a common problem in OS X.
+- In tmux:
+    - [SHIFT + left arrow] and [SHIFT + right arrow] switch windows to
+      the next (or previous.)
+    - [SHIFT + down arrow] creates new windows in the current session.
+    - Battery level displayed in the status line.
+    - Possible to copy text back and forth using the standard OS X
+      pasteboard (thanks to `reattach-to-user-namespace`.)
+- In Vim / MacVim:
+    - [F5] opens [Gundo][gundo] at the left.
+    - [F8] opens [Tagbar][tagbar] at the right.
+    - [F6] removes whitespace from the current buffer.
+    - [CTRL + N] toggles the [NERDTree][nerdtree] at the left.
+    - [CTRL + T] and also [CMD + T] in MacVim open the [CtrlP][ctrlp]
+      plugin window.
+    - `zz` centers the current line in the middle of the screen in
+      normal mode.
+    - `<Leader>+json` formats the current JSON on the editor for
+      readability.
+    - `<Leader>+PR` toggles MacVim in a "presentation mode" with bigger
+      fonts, for demos and teaching.
+    - `ctags` syntax definitions for [Asciidoc][asciidoc], Makefiles,
+      [Markdown][markdown] and Objective-C.
 
-You might want to install [Homebrew][10], and then issue the following
-commands:
+## Custom configuration
 
-- `brew tap homebrew/binary`
-- `brew install jsl` (required by the javaScriptLint.vim plugin)
+If you want to add your own configuration to zsh and tmux, add it to the
+files named `.local_bash_profile` and `.local_tmux.conf` in the
+`.dotfiles` folder; the contents of these two files will be loaded
+automatically at the end of the respective configuration files.
 
-For maximum compatibility with the [vim-airline plugin][8], you might
-want to install the patched version of [DejaVu Sans Mono][9].
 
-[1]:http://code.google.com/p/macvim/
-[2]:https://github.com/carlhuda/janus
-[3]:http://www.vim.org/
-[4]:http://en.wikipedia.org/wiki/Bash_(Unix_shell)
-[5]:http://www.tcsh.org/Welcome
-[6]:http://www.zsh.org/
-[7]:https://github.com/robbyrussell/oh-my-zsh
-[8]:https://github.com/bling/vim-airline
-[9]:https://github.com/powerline/fonts
-[10]:http://brew.sh
+[airline]:https://github.com/bling/vim-airline
+[asciidoc]:http://www.methods.co.nz/asciidoc/
+[bash]:http://en.wikipedia.org/wiki/Bash_(Unix_shell)
+[dejavusans]:https://github.com/powerline/fonts
+[homebrew]:http://brew.sh
+[janus]:https://github.com/carlhuda/janus
+[macvim]:https://github.com/b4winckler/macvim
+[markdown]:http://daringfireball.net/projects/markdown/
+[nerdtree]:https://github.com/scrooloose/nerdtree
+[ohmyzsh]:https://github.com/robbyrussell/oh-my-zsh
+[tagbar]:https://majutsushi.github.io/tagbar/
+[tcsh]:http://www.tcsh.org/
+[vim]:http://www.vim.org/
+[zsh]:http://www.zsh.org/
+[ctrlp]:https://github.com/kien/ctrlp.vim
+[gundo]:http://sjl.bitbucket.org/gundo.vim/
 
