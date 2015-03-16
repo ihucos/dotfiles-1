@@ -1,5 +1,5 @@
 " Color
-set background=light
+set background=dark
 colorscheme default
 
 " Change the default font
