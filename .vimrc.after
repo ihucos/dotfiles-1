@@ -19,7 +19,7 @@ let g:ragtag_global_maps = 1
 
 set list listchars=
 
-set wrap
+set nowrap
 set textwidth=80
 set wrapmargin=80
 set cursorline
@@ -73,7 +73,6 @@ cmap w!! w !sudo tee > /dev/null %
 au BufNewFile,BufRead *.asciidoc set filetype=asciidoc
 au BufNewFile,BufRead *.asc set filetype=asciidoc
 au BufNewFile,BufRead *.dump set filetype=sql
-au BufNewFile,BufRead *.md set filetype=markdown
 
 " Change the shape of the cursor when in edit more (this is only for iTerm2)
 " Adapted from
