@@ -15,10 +15,10 @@ You might want to install [Homebrew][homebrew], and then issue the following
 commands:
 
 - `brew tap homebrew/binary`
-- `brew install jsl` (required by the javaScriptLint.vim plugin)
 - `brew install ctags` (required by the [Tagbar][tagbar] vim plugin)
 - `brew install reattach-to-user-namespace` (required to be able to copy
   text from tmux to the OS X pasteboard)
+- `npm install jshint -g` (required by the [JSHint][jshint] vim plugin)
 
 For maximum compatibility with the [vim-airline plugin][airline], you
 might want to install the patched version of [DejaVu Sans
@@ -72,6 +72,8 @@ others:
       fonts, for demos and teaching.
     - `ctags` syntax definitions for [Asciidoc][asciidoc], Makefiles,
       [Markdown][markdown] and Objective-C.
+    - Disables the standard JSLint plugin provided by Janus, and instead
+      uses the JSHint.
 
 ## Custom configuration
 
@@ -84,9 +86,12 @@ automatically at the end of the respective configuration files.
 [airline]:https://github.com/bling/vim-airline
 [asciidoc]:http://www.methods.co.nz/asciidoc/
 [bash]:http://en.wikipedia.org/wiki/Bash_(Unix_shell)
+[ctrlp]:https://github.com/kien/ctrlp.vim
 [dejavusans]:https://github.com/powerline/fonts
+[gundo]:http://sjl.bitbucket.org/gundo.vim/
 [homebrew]:http://brew.sh
 [janus]:https://github.com/carlhuda/janus
+[jshint2]:https://github.com/Shutnik/jshint2.vim
 [macvim]:https://github.com/b4winckler/macvim
 [markdown]:http://daringfireball.net/projects/markdown/
 [nerdtree]:https://github.com/scrooloose/nerdtree
@@ -95,6 +100,4 @@ automatically at the end of the respective configuration files.
 [tcsh]:http://www.tcsh.org/
 [vim]:http://www.vim.org/
 [zsh]:http://www.zsh.org/
-[ctrlp]:https://github.com/kien/ctrlp.vim
-[gundo]:http://sjl.bitbucket.org/gundo.vim/
 

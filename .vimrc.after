@@ -95,6 +95,9 @@ autocmd BufWinEnter,BufNewFile *.asc setlocal formatoptions=tcqn
 autocmd BufWinEnter,BufNewFile *.asc setlocal comments=s1:/*,ex:*/,://,b:#,:%,:XCOMM,fb:-,fb:*,fb:+,fb:.,fb:>
 autocmd BufWinEnter,BufNewFile *.asc setlocal formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\\|^\\s*<\\d\\+>\\s\\+\\\\|^\\s*[a-zA-Z.]\\.\\s\\+\\\\|^\\s*[ivxIVX]\\+\\.\\s\\+
 
+" Run JSHint automatically when saving the file
+autocmd BufWritePost,FileWritePost *.js silent! JSHint
+
 " Show the correct, thin cursor in insert mode in vim when running
 " inside iTerm2 + tmux (boom)
 " Adapted from

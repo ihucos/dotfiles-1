@@ -29,7 +29,6 @@ mkdir $DIR
 
 # Manually install Vim plugins
 cp -R other/asciidoc $DIR
-cp -R other/jslint $DIR
 
 # Clone remote Vim plugins
 cd $DIR
@@ -43,4 +42,5 @@ git clone git://github.com/vim-scripts/taglist.vim.git
 git clone git://github.com/kballard/vim-swift.git
 git clone git://github.com/rizzatti/dash.vim.git
 git clone git://github.com/mattn/emmet-vim.git
+git clone git://github.com/Shutnik/jshint2.vim.git
 
