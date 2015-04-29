@@ -14,7 +14,7 @@ This installation provides defaults for:
 You might want to install [Homebrew][homebrew], and then issue the following
 commands:
 
-- `brew tap homebrew/binary`
+- `brew install node`
 - `brew install ctags` (required by the [Tagbar][tagbar] vim plugin)
 - `brew install reattach-to-user-namespace` (required to be able to copy
   text from tmux to the OS X pasteboard)
