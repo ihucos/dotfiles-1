@@ -91,7 +91,7 @@ automatically at the end of the respective configuration files.
 [gundo]:http://sjl.bitbucket.org/gundo.vim/
 [homebrew]:http://brew.sh
 [janus]:https://github.com/carlhuda/janus
-[jshint2]:https://github.com/Shutnik/jshint2.vim
+[jshint]:https://github.com/Shutnik/jshint2.vim
 [macvim]:https://github.com/b4winckler/macvim
 [markdown]:http://daringfireball.net/projects/markdown/
 [nerdtree]:https://github.com/scrooloose/nerdtree
