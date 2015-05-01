@@ -74,6 +74,10 @@ au BufNewFile,BufRead *.asciidoc set filetype=asciidoc
 au BufNewFile,BufRead *.asc set filetype=asciidoc
 au BufNewFile,BufRead *.dump set filetype=sql
 
+" Change the tab size for JavaScript files, set it to 2 spaces
+" http://stackoverflow.com/a/159065/133764
+au FileType javascript setl sw=2 sts=2 et
+
 " Change the shape of the cursor when in edit more (this is only for iTerm2)
 " Adapted from
 " http://code.google.com/p/iterm2/wiki/ProprietaryEscapeCodes
