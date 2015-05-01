@@ -1,6 +1,6 @@
 # Dotfiles
 
-This project contains configuration files for command-line tools.
+This project contains configuration files for various command-line tools.
 
 ## Requirements
 
