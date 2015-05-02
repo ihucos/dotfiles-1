@@ -1,6 +1,6 @@
 " Color
-set background=dark
-colorscheme solarized
+set background=light
+colorscheme Tomorrow
 
 " Change the default font
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
