@@ -6,6 +6,10 @@ autocmd BufEnter * lcd %:p:h
 " http://media.kbct.de/home/vim/doc/NERD_tree
 let NERDTreeShowHidden=1
 
+" Close NERDTree when opening a file
+" http://stackoverflow.com/a/14761218/133764
+let NERDTreeQuitOnOpen=1
+
 " Reverse command of J (join lines) adapted from
 " http://www.terminally-incoherent.com/blog/2012/03/21/why-vim/
 nmap <silent> <leader><CR> i<CR><ESC>
