@@ -114,7 +114,7 @@ function updateall {
     echo "----------------------------"
     printf '\033[0;34m%s\033[0m\n' "Upgrading Homebrew"
     brew update
-    brew upgrade
+    brew upgrade --all
     brew cleanup
     brew cask cleanup
     brew prune
