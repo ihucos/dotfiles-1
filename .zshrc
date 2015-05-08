@@ -141,6 +141,10 @@ function ascstats {
     wc -w *.asc
 }
 
+function timestamp {
+    date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s"
+}
+
 # Some custom configuration and aliases, not present in every computer
 if [ -f $HOME/.local_bash_profile ]; then
     source $HOME/.local_bash_profile
