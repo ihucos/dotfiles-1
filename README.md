@@ -50,6 +50,7 @@ others:
       remote Subversion repository.
     - Custom output for the `git log` command.
     - The `fixopenwith` command solves a common problem in OS X.
+    - The `timestamp` command returns the current Unix epoch time.
 - In tmux:
     - [SHIFT + left arrow] and [SHIFT + right arrow] switch windows to
       the next (or previous.)
