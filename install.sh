@@ -43,4 +43,5 @@ git clone git://github.com/kballard/vim-swift.git
 git clone git://github.com/rizzatti/dash.vim.git
 git clone git://github.com/mattn/emmet-vim.git
 git clone git://github.com/Shutnik/jshint2.vim.git
+git clone git://github.com/NLKNguyen/papercolor-theme.git
 

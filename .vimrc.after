@@ -120,9 +120,9 @@ endif
 
 " The color schemes can be seen here
 " http://www.vi-improved.org/color_sampler_pack/
-set t_Co=64 " Explicitly tell vim that the terminal supports 64 colors
-set background=dark
-colorscheme default
+set t_Co=256 " Explicitly tell vim that the terminal supports 64 colors
+set background=light
+colorscheme PaperColor
 
 " CtrlP
 map <C-T> :CtrlP<CR>
