@@ -60,6 +60,9 @@ defaults write org.vim.MacVim MMTextInsetTop 10
 # Required by Homebrew
 export HOMEBREW_TEMP=/tmp
 
+# Shoulda done this a long time ago
+export EDITOR=vim
+
 # Required by Mosh
 LC_CTYPE="en_US.UTF-8"
 
