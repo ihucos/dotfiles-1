@@ -1,6 +1,7 @@
 " Color
+set t_Co=256
 set background=light
-colorscheme Tomorrow
+colorscheme PaperColor
 
 " Change the default font
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
