@@ -37,10 +37,9 @@ nmap <leader>PR :call PresentationMode()<cr>
 
 function! WriterMode()
     colorscheme pencil
-    call PresentationMode()
+    set guifont=Inconsolata\ for\ Powerline:h22
     set nonumber
     set background=dark
-    Wordy weak
 endfunction
 nmap <leader>WR :call WriterMode()<cr>
 

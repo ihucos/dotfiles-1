@@ -1,6 +1,7 @@
 # Dotfiles
 
-This project contains configuration files for various command-line tools.
+This project contains configuration files for various command-line
+tools.
 
 ## Requirements
 
@@ -11,8 +12,8 @@ This installation provides defaults for:
 - [tcsh][tcsh]
 - [bash][bash]
 
-You might want to install [Homebrew][homebrew], and then issue the following
-commands:
+You might want to install [Homebrew][homebrew], and then issue the
+following commands:
 
 - `brew install node`
 - `brew install ctags` (required by the [Tagbar][tagbar] vim plugin)
@@ -22,7 +23,7 @@ commands:
 
 For maximum compatibility with the [vim-airline plugin][airline], you
 might want to install the patched version of [DejaVu Sans
-Mono][dejavusans].
+Mono][dejavusans] and [Inconsolata for Powerline][dejavusans].
 
 ## Installation
 
@@ -71,6 +72,8 @@ others:
       readability.
     - `<Leader>+PR` toggles MacVim in a "presentation mode" with bigger
       fonts, for demos and teaching.
+    - `<Leader>+WR` toggles MacVim in a "writer mode" with bigger fonts,
+      nicer layout and tools for writing text.
     - `ctags` syntax definitions for [Asciidoc][asciidoc], Makefiles,
       [Markdown][markdown] and Objective-C.
     - Disables the standard JSLint plugin provided by Janus, and instead
@@ -89,8 +92,7 @@ automatically at the end of the respective configuration files.
 [bash]:http://en.wikipedia.org/wiki/Bash_(Unix_shell)
 [ctrlp]:https://github.com/kien/ctrlp.vim
 [dejavusans]:https://github.com/powerline/fonts
-[gundo]:http://sjl.bitbucket.org/gundo.vim/
-[homebrew]:http://brew.sh
+[gundo]:http://sjl.bitbucket.org/gundo.vim/ [homebrew]:http://brew.sh
 [janus]:https://github.com/carlhuda/janus
 [jshint]:https://github.com/Shutnik/jshint2.vim
 [macvim]:https://github.com/b4winckler/macvim
@@ -98,7 +100,6 @@ automatically at the end of the respective configuration files.
 [nerdtree]:https://github.com/scrooloose/nerdtree
 [ohmyzsh]:https://github.com/robbyrussell/oh-my-zsh
 [tagbar]:https://majutsushi.github.io/tagbar/
-[tcsh]:http://www.tcsh.org/
-[vim]:http://www.vim.org/
+[tcsh]:http://www.tcsh.org/ [vim]:http://www.vim.org/
 [zsh]:http://www.zsh.org/
 
