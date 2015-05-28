@@ -92,7 +92,8 @@ automatically at the end of the respective configuration files.
 [bash]:http://en.wikipedia.org/wiki/Bash_(Unix_shell)
 [ctrlp]:https://github.com/kien/ctrlp.vim
 [dejavusans]:https://github.com/powerline/fonts
-[gundo]:http://sjl.bitbucket.org/gundo.vim/ [homebrew]:http://brew.sh
+[gundo]:http://sjl.bitbucket.org/gundo.vim/
+[homebrew]:http://brew.sh
 [janus]:https://github.com/carlhuda/janus
 [jshint]:https://github.com/Shutnik/jshint2.vim
 [macvim]:https://github.com/b4winckler/macvim
@@ -100,6 +101,7 @@ automatically at the end of the respective configuration files.
 [nerdtree]:https://github.com/scrooloose/nerdtree
 [ohmyzsh]:https://github.com/robbyrussell/oh-my-zsh
 [tagbar]:https://majutsushi.github.io/tagbar/
-[tcsh]:http://www.tcsh.org/ [vim]:http://www.vim.org/
+[tcsh]:http://www.tcsh.org/
+[vim]:http://www.vim.org/
 [zsh]:http://www.zsh.org/
 
