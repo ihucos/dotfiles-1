@@ -77,7 +77,7 @@ others:
     - `ctags` syntax definitions for [Asciidoc][asciidoc], Makefiles,
       [Markdown][markdown] and Objective-C.
     - Disables the standard JSLint plugin provided by Janus, and instead
-      uses the JSHint.
+      uses JSHint.
 
 ## Custom configuration
 
