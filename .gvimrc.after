@@ -35,6 +35,15 @@ function! PresentationMode()
 endfunction
 nmap <leader>PR :call PresentationMode()<cr>
 
+function! WriterMode()
+    colorscheme pencil
+    call PresentationMode()
+    set nonumber
+    set background=dark
+    Wordy weak
+endfunction
+nmap <leader>WR :call WriterMode()<cr>
+
 " Following three lines remove the auto copy function from VIM
 " http://vim.wikia.com/wiki/Auto_copy_the_mouse_selection
 set guioptions-=a
