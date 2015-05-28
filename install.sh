@@ -44,4 +44,8 @@ git clone git://github.com/rizzatti/dash.vim.git
 git clone git://github.com/mattn/emmet-vim.git
 git clone git://github.com/Shutnik/jshint2.vim.git
 git clone git://github.com/NLKNguyen/papercolor-theme.git
+git clone git://github.com/reedes/vim-wordy.git
+git clone git://github.com/reedes/vim-colors-pencil.git
+git clone git://github.com/reedes/vim-pencil.git
+git clone git://github.com/reedes/vim-lexical.git
 
