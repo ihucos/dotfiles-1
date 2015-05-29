@@ -19,7 +19,9 @@ set autowriteall
 set printoptions=paper:A4,syntax:y,portrait:n
 
 " Default styles for MacVim
-function! DefaultStyle()
+function! DefaultStyleMacVim()
+    " Make sure the default values are applied
+    call DefaultStyleVim()
     " Color
     set t_Co=256
     colorscheme PaperColor
@@ -28,10 +30,12 @@ function! DefaultStyle()
     set background=light
     set showtabline=2  "Always show the tab bar
     set wrap
+    set cursorline
+    set nocursorcolumn
     AirlineTheme light
 endfunction
 
-call DefaultStyle()
+call DefaultStyleMacVim()
 
 " Presentation colors and config
 " Adapted from
@@ -39,7 +43,7 @@ call DefaultStyle()
 function! PresentationMode()
     " Change the default font
     if exists("g:presmode")
-        call DefaultStyle()
+        call DefaultStyleMacVim()
         unlet g:presmode
     else
         set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
@@ -48,9 +52,9 @@ function! PresentationMode()
 endfunction
 nmap <leader>PR :call PresentationMode()<cr>
 
-function! WriterMode()
+function! WriterModeMacVim()
     if exists("g:writemode")
-        call DefaultStyle()
+        call DefaultStyleMacVim()
         unlet g:writemode
     else
         colorscheme pencil
@@ -59,8 +63,10 @@ function! WriterMode()
         set nonumber
         set guifont=Inconsolata\ for\ Powerline:h22
         set showtabline=1
+        set nocursorline
+        set nocursorcolumn
         let g:writemode=1
     end
 endfunction
-nmap <leader>WR :call WriterMode()<cr>
+nmap <leader>WR :call WriterModeMacVim()<cr>
 
