@@ -20,6 +20,9 @@ set autowriteall
 " http://vimdoc.sourceforge.net/htmldoc/print.html
 set printoptions=paper:A4,syntax:y,portrait:n
 
+" Always show the tab bar
+set showtabline=2
+
 " Presentation colors and config
 " Adapted from
 " http://vim.devth.com/presentation-mode-for-vim
@@ -36,10 +39,22 @@ endfunction
 nmap <leader>PR :call PresentationMode()<cr>
 
 function! WriterMode()
-    colorscheme pencil
-    set guifont=Inconsolata\ for\ Powerline:h22
-    set nonumber
-    set background=dark
+    if exists("g:writemode")
+        colorscheme PaperColor
+        set t_Co=256
+        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
+        set number
+        set background=light
+        set showtabline=2
+        unlet g:writemode
+    else
+        colorscheme pencil
+        set guifont=Inconsolata\ for\ Powerline:h22
+        set nonumber
+        set background=dark
+        set showtabline=1
+        let g:writemode=1
+    end
 endfunction
 nmap <leader>WR :call WriterMode()<cr>
 
