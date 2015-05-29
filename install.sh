@@ -48,4 +48,5 @@ git clone git://github.com/reedes/vim-wordy.git
 git clone git://github.com/reedes/vim-colors-pencil.git
 git clone git://github.com/reedes/vim-pencil.git
 git clone git://github.com/reedes/vim-lexical.git
+git clone git://github.com/gilligan/vim-lldb.git
 
