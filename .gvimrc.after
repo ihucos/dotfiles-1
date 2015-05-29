@@ -1,14 +1,12 @@
-" Color
-set t_Co=256
-set background=light
-colorscheme PaperColor
-
-" Change the default font
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
-
 " These settings come from
 " http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/
 set guioptions=aAce
+
+" Following three lines remove the auto copy function from VIM
+" http://vim.wikia.com/wiki/Auto_copy_the_mouse_selection
+set guioptions-=a
+set guioptions-=A
+set guioptions-=aA
 
 " Autosave when the app loses focus
 " This is adapted from
@@ -20,8 +18,20 @@ set autowriteall
 " http://vimdoc.sourceforge.net/htmldoc/print.html
 set printoptions=paper:A4,syntax:y,portrait:n
 
-" Always show the tab bar
-set showtabline=2
+" Default styles for MacVim
+function! DefaultStyle()
+    " Color
+    set t_Co=256
+    colorscheme PaperColor
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14 "Change the default font
+    set number
+    set background=light
+    set showtabline=2  "Always show the tab bar
+    set wrap
+    AirlineTheme light
+endfunction
+
+call DefaultStyle()
 
 " Presentation colors and config
 " Adapted from
@@ -29,7 +39,7 @@ set showtabline=2
 function! PresentationMode()
     " Change the default font
     if exists("g:presmode")
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
+        call DefaultStyle()
         unlet g:presmode
     else
         set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
@@ -40,27 +50,17 @@ nmap <leader>PR :call PresentationMode()<cr>
 
 function! WriterMode()
     if exists("g:writemode")
-        colorscheme PaperColor
-        set t_Co=256
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
-        set number
-        set background=light
-        set showtabline=2
+        call DefaultStyle()
         unlet g:writemode
     else
         colorscheme pencil
-        set guifont=Inconsolata\ for\ Powerline:h22
-        set nonumber
         set background=dark
+        set nowrap
+        set nonumber
+        set guifont=Inconsolata\ for\ Powerline:h22
         set showtabline=1
         let g:writemode=1
     end
 endfunction
 nmap <leader>WR :call WriterMode()<cr>
-
-" Following three lines remove the auto copy function from VIM
-" http://vim.wikia.com/wiki/Auto_copy_the_mouse_selection
-set guioptions-=a
-set guioptions-=A
-set guioptions-=aA
 
