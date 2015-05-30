@@ -69,6 +69,8 @@ LC_CTYPE="en_US.UTF-8"
 # Customize git log, taken from
 # http://coderwall.com/p/euwpig?i=3&p=1&t=git
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+# Create a local server from any git repo
+git config --global alias.serve "daemon --verbose --export-all --base-path=.git --reuseaddr --strict-paths .git/"
 
 # Avoid beeps
 setopt NO_BEEP
