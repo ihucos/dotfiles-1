@@ -22,9 +22,17 @@ set printoptions=paper:A4,syntax:y,portrait:n
 function! DefaultStyleMacVim()
     " Make sure the default values are applied
     call DefaultStyleVim()
+    " Reset variables
+    if exists("g:writemode")
+        unlet g:writemode
+    endif
+    if exists("g:presmode")
+        unlet g:presmode
+    endif
     " Color
     set t_Co=256
     colorscheme PaperColor
+    AirlineTheme light
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14 "Change the default font
     set number
     set background=light
@@ -32,7 +40,6 @@ function! DefaultStyleMacVim()
     set wrap
     set cursorline
     set nocursorcolumn
-    AirlineTheme light
 endfunction
 
 call DefaultStyleMacVim()
@@ -44,9 +51,16 @@ function! PresentationMode()
     " Change the default font
     if exists("g:presmode")
         call DefaultStyleMacVim()
-        unlet g:presmode
     else
         set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
+        colorscheme Borland
+        AirlineTheme jellybeans
+        set showtabline=1
+        set number
+        set background=dark
+        set wrap
+        set cursorline
+        set nocursorcolumn
         let g:presmode=1
     endif
 endfunction
@@ -55,7 +69,6 @@ nmap <leader>PR :call PresentationMode()<cr>
 function! WriterModeMacVim()
     if exists("g:writemode")
         call DefaultStyleMacVim()
-        unlet g:writemode
     else
         colorscheme pencil
         set background=dark
