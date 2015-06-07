@@ -20,8 +20,6 @@ set printoptions=paper:A4,syntax:y,portrait:n
 
 " Default styles for MacVim
 function! DefaultStyleMacVim()
-    " Make sure the default values are applied
-    call DefaultStyleVim()
     " Reset variables
     if exists("g:writemode")
         unlet g:writemode
