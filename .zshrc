@@ -47,6 +47,9 @@ alias h="cd ~"
 alias q="exit"
 alias x="exit"
 
+# This requires `brew install thefuck`
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
 # Some settings to get the battery level from the command line
 export CUTE_BATTERY_INDICATOR=Yes
 alias battery="~/.dotfiles/battery.sh Charging; ~/.dotfiles/battery.sh Discharging"
