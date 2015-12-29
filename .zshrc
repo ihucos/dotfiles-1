@@ -130,6 +130,11 @@ function updateall {
     brew doctor
 
     echo "----------------------------"
+    printf '\033[0;34m%s\033[0m\n' "Upgrading Rubygems"
+    gem update --system
+    gem update
+
+    echo "----------------------------"
     printf '\033[0;34m%s\033[0m\n' "Upgrading Janus"
     cd ~/.vim
     rake
