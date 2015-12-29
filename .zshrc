@@ -139,9 +139,10 @@ function updateall {
     cd ~/.vim
     rake
 
+    echo "----------------------------"
+    printf '\033[0;34m%s\033[0m\n' "Upgrading Vim plugins"
     cd ~/.janus
     for dir in *; do
-        echo "----------------------------"
         printf '\033[0;34m%s\033[0m\n' "Upgrading $dir"
         cd $dir
         git pull
