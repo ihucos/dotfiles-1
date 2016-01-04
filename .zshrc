@@ -43,20 +43,6 @@ export DEVELOPER_DIR=`xcode-select --print-path`
 # For Android stuff
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
-# Some aliases
-alias d="cd ~/Desktop"
-alias u="cd .."
-alias h="cd ~"
-alias q="exit"
-alias x="exit"
-
-# This requires `brew install thefuck`
-alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
-
-# Some settings to get the battery level from the command line
-export CUTE_BATTERY_INDICATOR=Yes
-alias battery="~/.dotfiles/battery.sh Charging; ~/.dotfiles/battery.sh Discharging"
-
 # Setting some defaults for MacVim
 defaults write org.vim.MacVim MMTextInsetBottom 10
 defaults write org.vim.MacVim MMTextInsetLeft 10
@@ -72,19 +58,8 @@ export EDITOR=vim
 # Required by Mosh
 LC_CTYPE="en_US.UTF-8"
 
-# Customize git log, taken from
-# http://coderwall.com/p/euwpig?i=3&p=1&t=git
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-# Create a local server from any git repo
-git config --global alias.serve "daemon --verbose --export-all --base-path=.git --reuseaddr --strict-paths .git/"
-
 # Avoid beeps
 setopt NO_BEEP
-
-# Quick way to rebuild the Launch Services database and get rid
-# of duplicates in the Open With submenu.
-# http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
 # Some custom commands go here
 function tmuxx {
