@@ -136,6 +136,7 @@ function timestamp {
 }
 
 # Some custom configuration and aliases, not present in every computer
+source $HOME/.bash_profile
 if [ -f $HOME/.local_bash_profile ]; then
     source $HOME/.local_bash_profile
 fi
