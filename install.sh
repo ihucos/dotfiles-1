@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-files=(.ackrc .aliases .bash_profile .gvimrc.after .tcshrc .vimrc.after .vimrc.before .inputrc .zshrc .tmux.conf .ctags)
+files=(.jshintrc .ackrc .aliases .bash_profile .gvimrc.after .tcshrc .vimrc.after .vimrc.before .inputrc .zshrc .tmux.conf .ctags)
 
 len=${#files[*]}
 i=0
