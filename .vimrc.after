@@ -149,7 +149,7 @@ function! DefaultStyleVim()
     set textwidth=80
     set wrapmargin=80
     set cursorline
-    AirlineTheme light
+    AirlineTheme PaperColor
 endfunction
 
 call DefaultStyleVim()
