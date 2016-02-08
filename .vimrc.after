@@ -136,6 +136,9 @@ map <C-N> :NERDTreeToggle<CR>
 " Shortcut for showing the tagbar
 nmap <F8> :TagbarToggle<CR>
 
+" Shortcut to show the alternate file (requires a.vim)
+map <Leader>a :AT<CR>
+
 " Default styles for Vim
 function! DefaultStyleVim()
     " The color schemes can be seen here
