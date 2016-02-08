@@ -31,7 +31,7 @@ function! DefaultStyleMacVim()
     set t_Co=256
     colorscheme PaperColor
     AirlineTheme light
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14 "Change the default font
+    set guifont=Inconsolata\ for\ Powerline:h14
     set number
     set background=light
     set showtabline=2  "Always show the tab bar
@@ -50,7 +50,7 @@ function! PresentationMode()
     if exists("g:presmode")
         call DefaultStyleMacVim()
     else
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
+        set guifont=Inconsolata\ for\ Powerline:h18
         colorscheme Borland
         AirlineTheme jellybeans
         set showtabline=1
