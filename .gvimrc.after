@@ -30,7 +30,7 @@ function! DefaultStyleMacVim()
     " Color
     set t_Co=256
     colorscheme PaperColor
-    AirlineTheme light
+    AirlineTheme dark
     set guifont=Inconsolata\ for\ Powerline:h14
     set number
     set background=light
@@ -52,7 +52,7 @@ function! PresentationMode()
     else
         set guifont=Inconsolata\ for\ Powerline:h18
         colorscheme Borland
-        AirlineTheme jellybeans
+        AirlineTheme pencil
         set showtabline=1
         set number
         set background=dark
