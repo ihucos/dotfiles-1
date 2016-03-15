@@ -143,7 +143,7 @@ function dash() {
 }
 
 function dman() {
-    open "dash://man:$*"
+    open "dash://manpages:$*"
 }
 
 # Some custom configuration and aliases, not present in every computer
