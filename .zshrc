@@ -135,6 +135,17 @@ function timestamp {
     date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s"
 }
 
+# Courtesy of Brett Terpstra
+# Open argument in Dash
+# http://brettterpstra.com/2014/05/10/bash-and-dash/
+function dash() {
+    open "dash:dash//$*"
+}
+
+function dman() {
+    open "dash://man:$*"
+}
+
 # Some custom configuration and aliases, not present in every computer
 source $HOME/.aliases
 if [ -f $HOME/.local_bash_profile ]; then
