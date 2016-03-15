@@ -139,7 +139,7 @@ function timestamp {
 # Open argument in Dash
 # http://brettterpstra.com/2014/05/10/bash-and-dash/
 function dash() {
-    open "dash:dash//$*"
+    open "dash://$*"
 }
 
 function dman() {
