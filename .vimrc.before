@@ -31,6 +31,9 @@ let g:tagbar_autoclose = 1
 let g:tagbar_autopreview = 1
 let g:tagbar_previewwin_pos = "rightbelow"
 
+" Disable concealing quotes when editing JSON files
+let g:vim_json_syntax_conceal = 0
+
 " Support for AsciiDoc in tagbar
 let g:tagbar_type_asciidoc = {
     \ 'ctagstype' : 'asciidoc',
