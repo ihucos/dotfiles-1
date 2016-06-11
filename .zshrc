@@ -61,6 +61,9 @@ LC_CTYPE="en_US.UTF-8"
 # Avoid beeps
 setopt NO_BEEP
 
+# Setup rbenv for the current session
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # Some custom commands go here
 function tmuxx {
     tmux ls | grep akosma
@@ -157,3 +160,5 @@ if [ -f $HOME/.local_bash_profile ]; then
     source $HOME/.local_bash_profile
 fi
 
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
