@@ -31,7 +31,7 @@ function! DefaultStyleMacVim()
     set t_Co=256
     colorscheme PaperColor
     AirlineTheme dark
-    set guifont=Inconsolata\ for\ Powerline:h14
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
     set number
     set background=light
     set showtabline=2  "Always show the tab bar
@@ -50,7 +50,7 @@ function! PresentationMode()
     if exists("g:presmode")
         call DefaultStyleMacVim()
     else
-        set guifont=Inconsolata\ for\ Powerline:h18
+        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
         colorscheme Borland
         AirlineTheme pencil
         set showtabline=1
@@ -72,7 +72,7 @@ function! WriterModeMacVim()
         set background=dark
         set nowrap
         set nonumber
-        set guifont=Inconsolata\ for\ Powerline:h22
+        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h22
         set showtabline=1
         set nocursorline
         set nocursorcolumn

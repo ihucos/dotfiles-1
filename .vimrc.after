@@ -145,7 +145,7 @@ function! DefaultStyleVim()
     " http://www.vi-improved.org/color_sampler_pack/
     set t_Co=256
     set background=light
-    colorscheme PaperColor
+    colorscheme pencil
     set number
     set showtabline=2  "Always show the tab bar
     set wrap
