@@ -17,8 +17,6 @@ following commands:
 
 - `brew install node`
 - `brew install ctags` (required by the [Tagbar][tagbar] vim plugin)
-- `brew install reattach-to-user-namespace` (required to be able to copy
-  text from tmux to the OS X pasteboard)
 - `npm install jshint -g` (required by the [JSHint][jshint] vim plugin)
 
 For maximum compatibility with the [vim-airline plugin][airline], you
@@ -57,8 +55,6 @@ others:
       the next (or previous.)
     - [SHIFT + down arrow] creates new windows in the current session.
     - Battery level displayed in the status line.
-    - Possible to copy text back and forth using the standard OS X
-      pasteboard (thanks to `reattach-to-user-namespace`.)
 - In Vim / MacVim:
     - [F5] opens [Gundo][gundo] at the left.
     - [F8] opens [Tagbar][tagbar] at the right.
