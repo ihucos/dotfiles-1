@@ -1,4 +1,4 @@
-alias ls="ls -alG"
+alias l="ls -alG"
 alias d="cd ~/Desktop"
 alias u="cd .."
 alias h="cd ~"
