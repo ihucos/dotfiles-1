@@ -146,13 +146,15 @@ function! DefaultStyleVim()
     set t_Co=256
     set background=light
     colorscheme pencil
+    AirlineTheme dark
     set number
     set showtabline=2  "Always show the tab bar
     set wrap
+    set cursorline
+    set nocursorcolumn
+    set colorcolumn=
     set textwidth=80
     set wrapmargin=80
-    set cursorline
-    AirlineTheme dark
 endfunction
 
 call DefaultStyleVim()
@@ -162,13 +164,15 @@ function! WriterModeVim()
         call DefaultStyleVim()
         unlet g:writemode
     else
-        colorscheme pencil
         set background=dark
-        set nowrap
+        colorscheme default
+        AirlineTheme pencil
         set nonumber
-        set showtabline=1
+        set showtabline=1 "Only show tab bar when needed
+        set nowrap
         set nocursorline
         set nocursorcolumn
+        set colorcolumn=+1
         let g:writemode=1
     end
 endfunction
