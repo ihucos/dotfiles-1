@@ -72,7 +72,7 @@ function! WriterModeMacVim()
         set background=dark
         set nowrap
         set nonumber
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h22
+        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
         set showtabline=1
         set nocursorline
         set nocursorcolumn
