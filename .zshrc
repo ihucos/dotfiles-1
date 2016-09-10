@@ -102,11 +102,9 @@ function updateall {
     brew update
     brew upgrade --all
     brew cleanup
-    brew cask cleanup
     brew prune
     brew linkapps
     brew doctor
-    brew cask doctor
 
     echo "----------------------------"
     printf '\033[0;34m%s\033[0m\n' "Upgrading npm"
