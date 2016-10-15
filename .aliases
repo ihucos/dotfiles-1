@@ -5,6 +5,7 @@ alias h="cd ~"
 alias q="exit"
 alias x="exit"
 alias t="tree -C -d"
+alias icloud="cd ~/Library/Mobile Documents/com~apple~CloudDocs"
 
 # This requires `brew install thefuck`
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
