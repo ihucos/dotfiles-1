@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-files=(.jshintrc .ackrc .aliases .bash_profile .gvimrc.after .tcshrc .vimrc.after .vimrc.before .inputrc .zshrc .tmux.conf .ctags)
+files=(.jshintrc .ackrc .aliases .bash_profile .tcshrc .vimrc .inputrc .zshrc .tmux.conf .ctags)
 
 len=${#files[*]}
 i=0
@@ -16,39 +16,33 @@ touch ~/.dotfiles/.local_tmux.conf
 ln -s ~/.dotfiles/.local_bash_profile ~/.local_bash_profile
 ln -s ~/.dotfiles/.local_tmux.conf ~/.local_tmux.conf
 
-# Install Vim .janus extensions
-DIR=~/.janus
-
-# If the build directory exists, delete it
-if [ -d "$DIR" ]; then
-  rm -rf $DIR
-fi
-
-# Create the required extensions dir
-mkdir $DIR
+# Install Vim plugins here
+DIR=~/.vim/bundle
 
 # Manually install Vim plugins
 cp -R other/asciidoc $DIR
 
-# Clone remote Vim plugins
 cd $DIR
-git clone git://github.com/tpope/vim-ragtag.git
-git clone git://github.com/vim-scripts/loremipsum.git
-git clone git://github.com/vim-scripts/YankRing.vim.git
-git clone git://github.com/bling/vim-airline.git
-git clone git://github.com/kana/vim-smartinput.git
-git clone git://github.com/tomtom/tcomment_vim
-git clone git://github.com/vim-scripts/taglist.vim.git
-git clone git://github.com/toyamarinyon/vim-swift.git
-git clone git://github.com/rizzatti/dash.vim.git
-git clone git://github.com/mattn/emmet-vim.git
-git clone git://github.com/Shutnik/jshint2.vim.git
-git clone git://github.com/NLKNguyen/papercolor-theme.git
-git clone git://github.com/reedes/vim-wordy.git
-git clone git://github.com/reedes/vim-colors-pencil.git
-git clone git://github.com/reedes/vim-pencil.git
-git clone git://github.com/reedes/vim-lexical.git
-git clone git://github.com/nacitar/a.vim.git
-git clone git://github.com/b4winckler/vim-objc.git
-git clone git://github.com/msanders/cocoa.vim.git
+git clone https://github.com/NLKNguyen/papercolor-theme.git
+git clone https://github.com/Raimondi/delimitMate.git
+git clone https://github.com/airblade/vim-gitgutter.git
+git clone https://github.com/bronson/vim-trailing-whitespace.git
+git clone https://github.com/chrisbra/NrrwRgn.git
+git clone https://github.com/ctrlpvim/ctrlp.vim.git
+git clone https://github.com/elzr/vim-json.git
+git clone https://github.com/keith/swift.vim.git
+git clone https://github.com/majutsushi/tagbar.git
+git clone https://github.com/mileszs/ack.vim.git
+git clone https://github.com/mkitt/tabline.vim.git
+git clone https://github.com/reedes/vim-colors-pencil.git
+git clone https://github.com/reedes/vim-pencil.git
+git clone https://github.com/scrooloose/nerdcommenter.git
+git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/scrooloose/syntastic.git
+git clone https://github.com/sjl/gundo.vim.git
+git clone https://github.com/terryma/vim-multiple-cursors.git
+git clone https://github.com/tpope/vim-fugitive.git
+git clone https://github.com/vim-airline/vim-airline-themes.git
+git clone https://github.com/vim-airline/vim-airline.git
+git clone https://github.com/vim-scripts/YankRing.vim.git
 

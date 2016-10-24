@@ -117,13 +117,8 @@ function updateall {
     gem update
 
     echo "----------------------------"
-    printf '\033[0;34m%s\033[0m\n' "Upgrading Janus"
-    cd ~/.vim
-    rake
-
-    echo "----------------------------"
     printf '\033[0;34m%s\033[0m\n' "Upgrading Vim plugins"
-    cd ~/.janus
+    cd ~/.vim/bundles
     for dir in *; do
         printf '\033[0;34m%s\033[0m\n' "Upgrading $dir"
         cd $dir

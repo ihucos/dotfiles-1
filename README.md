@@ -8,7 +8,7 @@ tools.
 This installation provides defaults for:
 
 - [zsh][zsh] + [oh-my-zsh][ohmyzsh]
-- [vim][vim] + [MacVim][macvim] + [Janus][janus]
+- [vim][vim] + [MacVim][macvim]
 - [tcsh][tcsh]
 - [bash][bash]
 
@@ -23,15 +23,22 @@ For maximum compatibility with the [vim-airline plugin][airline], you
 might want to install the patched version of [DejaVu Sans
 Mono][dejavusans] and [Inconsolata for Powerline][dejavusans].
 
+Install Pathogen:
+
+```
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+```
+
 ## Installation
 
-- Install requirements as described in the next section.
+- Install requirements as described in the previous section.
 - Clone the repo from Github into a hidden folder named .dotfiles:
     - `cd ~`
     - `git clone git@github.com:akosma/dotfiles.git .dotfiles`
     - `cd .dotfiles`
 - Run the install.sh folder to create symlinks and clone plugins in the
-  `~/.janus` folder:
+  `~/.vim/bundles` folder:
     - `./install.sh`
 
 ## Features
@@ -41,18 +48,18 @@ others:
 
 - In zsh:
     - Custom prompt with more information and with visual contrast.
-    - The `ascstats` command shows statistics about number of words in
-      the current Asciidoc files.
-    - The `updateall` command updates of Homebrew, janus, and these
-      dotfiles to the latest versions.
-    - The `gitsvnpush` command synchronises a local Git repo with a
-      remote Subversion repository.
+    - The `ascstats` command shows statistics about number of words in the
+      current Asciidoc files.
+    - The `updateall` command updates of Homebrew, and these dotfiles to
+      the latest versions.
+    - The `gitsvnpush` command synchronises a local Git repo with a remote
+      Subversion repository.
     - Custom output for the `git log` command.
     - The `fixopenwith` command solves a common problem in OS X.
     - The `timestamp` command returns the current Unix epoch time.
 - In tmux:
-    - [SHIFT + left arrow] and [SHIFT + right arrow] switch windows to
-      the next (or previous.)
+    - [SHIFT + left arrow] and [SHIFT + right arrow] switch windows to the
+      next (or previous.)
     - [SHIFT + down arrow] creates new windows in the current session.
     - Battery level displayed in the status line.
 - In Vim / MacVim:
@@ -62,8 +69,8 @@ others:
     - [CTRL + N] toggles the [NERDTree][nerdtree] at the left.
     - [CTRL + T] and also [CMD + T] in MacVim open the [CtrlP][ctrlp]
       plugin window.
-    - `zz` centers the current line in the middle of the screen in
-      normal mode.
+    - `zz` centers the current line in the middle of the screen in normal
+      mode.
     - `<Leader>+json` formats the current JSON on the editor for
       readability.
     - `<Leader>+PR` toggles MacVim in a "presentation mode" with bigger
@@ -72,8 +79,6 @@ others:
       nicer layout and tools for writing text.
     - `ctags` syntax definitions for [Asciidoc][asciidoc], Makefiles,
       [Markdown][markdown] and Objective-C.
-    - Disables the standard JSLint plugin provided by Janus, and instead
-      uses JSHint.
 
 ## Custom configuration
 
@@ -90,7 +95,6 @@ automatically at the end of the respective configuration files.
 [dejavusans]:https://github.com/powerline/fonts
 [gundo]:http://sjl.bitbucket.org/gundo.vim/
 [homebrew]:http://brew.sh
-[janus]:https://github.com/carlhuda/janus
 [jshint]:https://github.com/Shutnik/jshint2.vim
 [macvim]:https://github.com/b4winckler/macvim
 [markdown]:http://daringfireball.net/projects/markdown/
