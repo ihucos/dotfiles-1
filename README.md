@@ -64,11 +64,12 @@ others:
     - Battery level displayed in the status line.
 - In Vim / MacVim:
     - [F5] opens [Gundo][gundo] at the left.
-    - [F8] opens [Tagbar][tagbar] at the right.
     - [F6] removes whitespace from the current buffer.
-    - [CTRL + N] toggles the [NERDTree][nerdtree] at the left.
-    - [CTRL + T] and also [CMD + T] in MacVim open the [CtrlP][ctrlp]
-      plugin window.
+    - [F7] shows the YankRing buffer at the bottom.
+    - [F8] opens [Tagbar][tagbar] at the right.
+    - [CTRL + O] toggles the [NERDTree][nerdtree] at the left.
+    - [CTRL + T] in MacVim open the [CtrlP][ctrlp] plugin window.
+    - [CTRL + j] and [CTRL + k] nudge text up and down.
     - `zz` centers the current line in the middle of the screen in normal
       mode.
     - `<Leader>+json` formats the current JSON on the editor for

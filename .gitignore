@@ -1,3 +1,5 @@
 .local_bash_profile
 .local_tmux.conf
+*.swp
+
 
