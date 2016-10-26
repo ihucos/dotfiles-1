@@ -1,7 +1,6 @@
 # Dotfiles
 
-This project contains configuration files for various command-line
-tools.
+This project contains configuration files for various command-line tools.
 
 ## Requirements
 
@@ -15,6 +14,9 @@ This installation provides defaults for:
 You might want to install [Homebrew][homebrew], and then issue the
 following commands:
 
+- `brew install vim` (this installation requires the Vim editor as
+  provided by Homebrew, and will not work properly with the Vim bundled by
+  default with macOS, because of the `+clipboard` option.)
 - `brew install node`
 - `brew install ctags` (required by the [Tagbar][tagbar] vim plugin)
 - `npm install jshint -g` (required by the [JSHint][jshint] vim plugin)
@@ -63,6 +65,8 @@ others:
     - [SHIFT + down arrow] creates new windows in the current session.
     - Battery level displayed in the status line.
 - In Vim / MacVim:
+    - The `TAB` key is mapped as `ESC` (for compatibility / usability in
+      new Macs without `ESC` key.)
     - [F5] opens [Gundo][gundo] at the left.
     - [F6] removes whitespace from the current buffer.
     - [F7] shows the YankRing buffer at the bottom.
@@ -72,6 +76,8 @@ others:
     - [CTRL + j] and [CTRL + k] nudge text up and down.
     - `zz` centers the current line in the middle of the screen in normal
       mode.
+    - `<Leader>+mark` opens the current file in the [Marked 2][marked2]
+      application.
     - `<Leader>+json` formats the current JSON on the editor for
       readability.
     - `<Leader>+PR` toggles MacVim in a "presentation mode" with bigger
@@ -99,10 +105,9 @@ automatically at the end of the respective configuration files.
 [jshint]:https://github.com/Shutnik/jshint2.vim
 [macvim]:https://github.com/b4winckler/macvim
 [markdown]:http://daringfireball.net/projects/markdown/
+[marked2]:http://marked2app.com
 [nerdtree]:https://github.com/scrooloose/nerdtree
 [ohmyzsh]:https://github.com/robbyrussell/oh-my-zsh
-[tagbar]:https://majutsushi.github.io/tagbar/
-[tcsh]:http://www.tcsh.org/
-[vim]:http://www.vim.org/
-[zsh]:http://www.zsh.org/
+[tagbar]:https://majutsushi.github.io/tagbar/ [tcsh]:http://www.tcsh.org/
+[vim]:http://www.vim.org/ [zsh]:http://www.zsh.org/
 
