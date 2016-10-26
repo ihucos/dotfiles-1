@@ -30,6 +30,7 @@ git clone https://github.com/bronson/vim-trailing-whitespace.git
 git clone https://github.com/chrisbra/NrrwRgn.git
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
 git clone https://github.com/elzr/vim-json.git
+git clone https://github.com/jacquesbh/vim-showmarks.git
 git clone https://github.com/keith/swift.vim.git
 git clone https://github.com/majutsushi/tagbar.git
 git clone https://github.com/mattn/emmet-vim.git
