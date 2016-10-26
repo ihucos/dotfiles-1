@@ -1,22 +1,22 @@
 #!/bin/sh
 
-HEART_FULL=♥
-HEART_EMPTY=♡
-[ -z "$NUM_HEARTS" ] &&
-    NUM_HEARTS=10
+ICON_FULL=■
+ICON_EMPTY=□
+[ -z "$NUM_ICONS" ] &&
+    NUM_ICONS=10
 
 cutinate()
 {
     perc=$1
-    inc=$(( 100 / $NUM_HEARTS))
+    inc=$(( 100 / $NUM_ICONS))
     value=$inc
 
 
-    for i in `seq $NUM_HEARTS`; do
+    for i in `seq $NUM_ICONS`; do
         if [ $value -le $perc ]; then
-            printf "%s " $HEART_FULL
+            printf "%s " $ICON_FULL
         else
-            printf "%s " $HEART_EMPTY
+            printf "%s " $ICON_EMPTY
         fi
         value=$(( $value + $inc ))
     done
@@ -34,7 +34,6 @@ linux_get_bat ()
 freebsd_get_bat ()
 {
     echo "$(sysctl -n hw.acpi.battery.life)"
-
 }
 
 # Do with grep and awk unless too hard
