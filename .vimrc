@@ -137,6 +137,10 @@ onoremap <Tab> <Esc>
 inoremap <Tab> <Esc>`^
 inoremap <Leader><Tab> <Tab>
 
+let g:user_emmet_mode='a'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 au BufNewFile,BufRead *.asciidoc set filetype=asciidoc
 au BufNewFile,BufRead *.asc set filetype=asciidoc
 au BufNewFile,BufRead *.dump set filetype=sql
