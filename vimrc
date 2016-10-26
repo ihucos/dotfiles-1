@@ -18,6 +18,8 @@ let g:tagbar_autofocus = 1
 let g:tagbar_autopreview = 1
 let g:tagbar_compact = 1
 let g:tagbar_previewwin_pos = "rightbelow"
+let g:user_emmet_install_global = 0
+let g:user_emmet_mode='a'
 let g:vim_json_syntax_conceal = 0
 let g:yankring_replace_n_nkey = '<C-S-p>'
 let g:yankring_replace_n_pkey = '<C-p>'
@@ -138,18 +140,13 @@ onoremap <Tab> <Esc>
 inoremap <Tab> <Esc>`^
 inoremap <Leader><Tab> <Tab>
 
-let g:user_emmet_mode='a'
-let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
-au BufNewFile,BufRead *.asciidoc set filetype=asciidoc
-au BufNewFile,BufRead *.asc set filetype=asciidoc
-au BufNewFile,BufRead *.dump set filetype=sql
+autocmd BufNewFile,BufRead *.asciidoc set filetype=asciidoc
+autocmd BufNewFile,BufRead *.asc set filetype=asciidoc
+autocmd BufNewFile,BufRead *.dump set filetype=sql
 
 autocmd BufWritePost,FileWritePost *.js silent! JSHint
-au FocusLost * silent! wa
-set autowriteall
-set printoptions=paper:A4,syntax:y,portrait:y
 
 augroup pencil
   autocmd!
@@ -178,45 +175,4 @@ function! DefaultStyle()
 endfunction
 
 call DefaultStyle()
-
-function! PresentationStyle()
-    if exists("g:writemode")
-        unlet g:writemode
-    endif
-    if exists("g:presmode")
-        call DefaultStyle()
-    else
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
-        colorscheme default
-        AirlineTheme PaperColor
-        set background=light
-        set showtabline=1
-        set number
-        set wrap
-        set cursorline
-        set nocursorcolumn
-        let g:presmode=1
-    endif
-endfunction
-nmap <leader>PR :call PresentationStyle()<cr>
-
-function! WriterStyle()
-    if exists("g:presmode")
-        unlet g:presmode
-    endif
-    if exists("g:writemode")
-        call DefaultStyle()
-    else
-        colorscheme pencil
-        set background=dark
-        set nowrap
-        set nonumber
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
-        set showtabline=1
-        set nocursorline
-        set nocursorcolumn
-        let g:writemode=1
-    end
-endfunction
-nmap <leader>WR :call WriterStyle()<cr>
 

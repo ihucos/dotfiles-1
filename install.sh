@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-files=(.jshintrc .ackrc .aliases .bash_profile .tcshrc .vimrc .inputrc .zshrc .tmux.conf .ctags)
+files=(.jshintrc .ackrc .aliases .bash_profile .tcshrc .inputrc .zshrc .tmux.conf .ctags)
 
 len=${#files[*]}
 i=0
@@ -11,10 +11,13 @@ while [ $i -lt $len ]; do
     let i++
 done
 
-touch ~/.dotfiles/.local_bash_profile
-touch ~/.dotfiles/.local_tmux.conf
-ln -s ~/.dotfiles/.local_bash_profile ~/.local_bash_profile
-ln -s ~/.dotfiles/.local_tmux.conf ~/.local_tmux.conf
+ln -s ~/.dotfiles/vimrc ~/.vim/vimrc
+ln -s ~/.dotfiles/gvimrc ~/.vim/gvimrc
+
+#touch ~/.dotfiles/.local_bash_profile
+#touch ~/.dotfiles/.local_tmux.conf
+#ln -s ~/.dotfiles/.local_bash_profile ~/.local_bash_profile
+#ln -s ~/.dotfiles/.local_tmux.conf ~/.local_tmux.conf
 
 # Install Vim plugins here
 DIR=~/.vim/bundle
