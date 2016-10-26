@@ -1,8 +1,8 @@
 autocmd BufEnter * lcd %:p:h
 
 let g:NERDTreeDirArrows=0
-let g:NERDTreeQuitOnOpen=0
-let g:NERDTreeShowHidden=0
+let g:NERDTreeQuitOnOpen=1
+let g:NERDTreeShowHidden=1
 let g:airline_powerline_fonts = 1
 let g:ctrlp_map = '<c-t>'
 let g:ctrlp_show_hidden = 1
