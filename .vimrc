@@ -131,6 +131,11 @@ nnoremap <F5> :GundoToggle<CR>
 nnoremap <silent> <F6> :FixWhitespace<CR>
 nnoremap <silent> <F7> :YRShow<CR>
 nnoremap <F8> :TagbarToggle<CR>
+nnoremap <Tab> <Esc>
+vnoremap <Tab> <Esc>gV
+onoremap <Tab> <Esc>
+inoremap <Tab> <Esc>`^
+inoremap <Leader><Tab> <Tab>
 
 au BufNewFile,BufRead *.asciidoc set filetype=asciidoc
 au BufNewFile,BufRead *.asc set filetype=asciidoc
