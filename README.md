@@ -108,6 +108,8 @@ automatically at the end of the respective configuration files.
 [marked2]:http://marked2app.com
 [nerdtree]:https://github.com/scrooloose/nerdtree
 [ohmyzsh]:https://github.com/robbyrussell/oh-my-zsh
-[tagbar]:https://majutsushi.github.io/tagbar/ [tcsh]:http://www.tcsh.org/
-[vim]:http://www.vim.org/ [zsh]:http://www.zsh.org/
+[tagbar]:https://majutsushi.github.io/tagbar/
+[tcsh]:http://www.tcsh.org/
+[vim]:http://www.vim.org/
+[zsh]:http://www.zsh.org/
 
