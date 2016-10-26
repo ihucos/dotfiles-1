@@ -123,15 +123,18 @@ inoremap <C-j> <Esc>:m .+1<CR>==gi
 inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
-:nmap n nzz
-:nmap p pzz
-:nmap <S-G> <S-G>zz
+nmap n nzz
+nmap <S-G> <S-G>zz
 nmap <Leader>json :%!python -m json.tool<CR>
 map <C-O> :NERDTreeToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <silent> <F6> :FixWhitespace<CR>
 nnoremap <silent> <F7> :YRShow<CR>
 nnoremap <F8> :TagbarToggle<CR>
+
+au BufNewFile,BufRead *.asciidoc set filetype=asciidoc
+au BufNewFile,BufRead *.asc set filetype=asciidoc
+au BufNewFile,BufRead *.dump set filetype=sql
 
 autocmd BufWritePost,FileWritePost *.js silent! JSHint
 au FocusLost * silent! wa
