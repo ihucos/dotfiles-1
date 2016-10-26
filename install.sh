@@ -32,6 +32,7 @@ git clone https://github.com/ctrlpvim/ctrlp.vim.git
 git clone https://github.com/elzr/vim-json.git
 git clone https://github.com/keith/swift.vim.git
 git clone https://github.com/majutsushi/tagbar.git
+git clone https://github.com/mattn/emmet-vim.git
 git clone https://github.com/mileszs/ack.vim.git
 git clone https://github.com/mkitt/tabline.vim.git
 git clone https://github.com/reedes/vim-colors-pencil.git
