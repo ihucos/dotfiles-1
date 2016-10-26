@@ -23,6 +23,8 @@ let g:user_emmet_mode='a'
 let g:vim_json_syntax_conceal = 0
 let g:yankring_replace_n_nkey = '<C-S-p>'
 let g:yankring_replace_n_pkey = '<C-p>'
+let g:yankring_history_dir = '$HOME/.vim/'
+let g:yankring_history_file = '.yankring_history'
 
 if exists('$TMUX')
     let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
