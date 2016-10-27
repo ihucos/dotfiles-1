@@ -136,11 +136,6 @@ nnoremap <silent> <F6> :FixWhitespace<CR>
 nnoremap <silent> <F7> :YRShow<CR>
 nnoremap <F8> :TagbarToggle<CR>
 nnoremap <Leader>mark :silent !open -a "Marked 2.app" "%:p"<cr>
-nnoremap <Tab> <Esc>
-vnoremap <Tab> <Esc>gV
-onoremap <Tab> <Esc>
-inoremap <Tab> <Esc>`^
-inoremap <Leader><Tab> <Tab>
 
 autocmd FileType html,css EmmetInstall
 
