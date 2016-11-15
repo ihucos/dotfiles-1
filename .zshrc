@@ -118,7 +118,7 @@ function updateall {
 
     echo "----------------------------"
     printf '\033[0;34m%s\033[0m\n' "Upgrading Vim plugins"
-    cd ~/.vim/bundles
+    cd ~/.vim/bundle
     for dir in *; do
         printf '\033[0;34m%s\033[0m\n' "Upgrading $dir"
         cd $dir
