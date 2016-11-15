@@ -117,9 +117,13 @@ function updateall {
     gem update
 
     echo "----------------------------"
+    printf '\033[0;34m%s\033[0m\n' "Upgrading Mac App Store apps"
+    mas upgrade
+
+    echo "----------------------------"
     printf '\033[0;34m%s\033[0m\n' "Upgrading Vim plugins"
     cd ~/.vim/bundle
-    for dir in *; do
+    for dir in */ ; do
         printf '\033[0;34m%s\033[0m\n' "Upgrading $dir"
         cd $dir
         git pull
