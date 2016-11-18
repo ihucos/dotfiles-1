@@ -4,6 +4,9 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X1
 # Path for the command-line Swift.org distribution
 export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:"${PATH}"
 
+# Path for the Android SDK
+export PATH=~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools:"${PATH}"
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -41,7 +44,7 @@ PROMPT='%{$bg[red]%}%{$fg[white]%} %n@%m: %D{%a %d %b %Y}, %* %{$reset_color%}
 export DEVELOPER_DIR=`xcode-select --print-path`
 
 # For Android stuff
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_HOME=~/Library/Android/sdk
 
 # Setting some defaults for MacVim
 defaults write org.vim.MacVim MMTextInsetBottom 10
