@@ -136,6 +136,7 @@ nnoremap <silent> <F6> :FixWhitespace<CR>
 nnoremap <silent> <F7> :YRShow<CR>
 nnoremap <F8> :TagbarToggle<CR>
 nnoremap <Leader>mark :silent !open -a "Marked 2.app" "%:p"<cr>
+nnoremap <leader>tl :vimgrep TODO % \| copen<CR>
 
 autocmd FileType html,css EmmetInstall
 
