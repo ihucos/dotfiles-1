@@ -93,6 +93,7 @@ let g:tagbar_type_swift = {
 \ }
 
 set nocompatible
+set hidden
 set clipboard=unnamed
 set backspace=indent,eol,start
 set lazyredraw
