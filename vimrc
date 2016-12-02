@@ -101,12 +101,17 @@ set number
 set ls=2
 set tabstop=4
 set shiftwidth=4
+set autoindent
+set copyindent
+set hlsearch
 set incsearch
 set ruler
-set nobackup
 set ignorecase
 set ttyfast
+set showmatch
 set smartindent
+set smartcase
+set smarttab
 set nocindent
 set softtabstop=4
 set expandtab
@@ -116,7 +121,14 @@ set ttimeout
 set timeoutlen=50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/build/*,*/docs/*,*/Pods/*
 set encoding=utf-8
-set hlsearch
+set nobackup
+set noswapfile
+set history=1000
+set undolevels=1000
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title
+set visualbell
+set noerrorbells
 syntax on
 filetype plugin indent on
 
