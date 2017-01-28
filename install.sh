@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 files=(.jshintrc .ackrc .aliases .bash_profile .tcshrc .inputrc .zshrc .tmux.conf .ctags)
 

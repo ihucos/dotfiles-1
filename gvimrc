@@ -9,7 +9,7 @@ function! PresentationStyle()
     if exists("g:presmode")
         call DefaultStyle()
     else
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
+        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 18
         colorscheme default
         AirlineTheme PaperColor
         set background=light
@@ -34,7 +34,7 @@ function! WriterStyle()
         set background=dark
         set nowrap
         set nonumber
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18
+        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 18
         set showtabline=1
         set nocursorline
         set nocursorcolumn

@@ -7,6 +7,7 @@ let g:airline_powerline_fonts = 1
 let g:ctrlp_map = '<c-t>'
 let g:ctrlp_show_hidden = 1
 let g:gundo_close_on_revert=1
+let g:gundo_prefer_python3 = 1
 let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_quit_key='<Enter>'
@@ -176,7 +177,7 @@ function! DefaultStyle()
     " Color
     set t_Co=256
     colorscheme PaperColor
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 14
     set number
     set background=light
     set showtabline=1
