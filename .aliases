@@ -5,7 +5,8 @@ alias h="cd ~"
 alias q="exit"
 alias x="exit"
 alias t="tree -C -d"
-alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias pbcopy="xclip -selection clipboard"
+alias pbpaste="xclip -selection clipboard -o"
 
 # This requires `brew install thefuck`
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
@@ -13,11 +14,6 @@ alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 # Some settings to get the battery level from the command line
 export CUTE_BATTERY_INDICATOR=Yes
 alias battery="~/.dotfiles/battery.sh Charging; ~/.dotfiles/battery.sh Discharging"
-
-# Quick way to rebuild the Launch Services database and get rid
-# of duplicates in the Open With submenu.
-# http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
 # Customize git log, taken from
 # http://coderwall.com/p/euwpig?i=3&p=1&t=git
