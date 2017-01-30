@@ -154,15 +154,8 @@ function dman() {
     open "dash://manpages:$*"
 }
 
-function o() {
-    case $(uname -s) in
-        "Linux")
-            xdg-open $*
-            ;;
-        "Darwin")
-            open $*
-            ;;
-    esac
+function open() {
+    xdg-open $* > /dev/null 2>&1
 }
 
 # Some custom configuration and aliases, not present in every computer
