@@ -61,6 +61,9 @@ export EDITOR=vim
 # Required by Mosh
 LC_CTYPE="en_US.UTF-8"
 
+# Required by newsbeuter
+export LANG="en_US.UTF-8"
+
 # Avoid beeps
 setopt NO_BEEP
 
