@@ -7,6 +7,9 @@ export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:"${PA
 # Path for the Android SDK
 export PATH=~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools:"${PATH}"
 
+# Path for Mono
+export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
