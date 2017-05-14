@@ -52,3 +52,8 @@ git clone https://github.com/vim-airline/vim-airline.git
 git clone https://github.com/vim-scripts/YankRing.vim.git
 git clone https://github.com/fsharp/vim-fsharp.git
 
+# Required installation for the vim-fsharp plugin
+cd vim-fsharp
+make
+cd ..
+
