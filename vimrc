@@ -92,6 +92,16 @@ let g:tagbar_type_swift = {
     \ 'sort' : 0
 \ }
 
+let g:tagbar_type_fsharp = {
+    \ 'ctagstype': 'fsharp',
+    \ 'kinds' : [
+        \ 'b:binding',
+        \ 'i:inline',
+        \ 't:type'
+    \ ],
+    \ 'sort' : 0
+\ }
+
 set nocompatible
 set hidden
 set clipboard=unnamed
